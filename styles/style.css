@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.content {
+    width: 98%;
+    margin: 0 auto;
+}
+.config-filias fieldset {
+    float: left;
+    margin-right: 5px;
+}
+#t-promocao {
+    width: 200px;
+    padding: 4px;
+}
+#selects-content {
+    float: left;
+    margin-top: 8px;
+    padding: 3px;
+    border: 2px solid #888;
+    display: flex;
+    align-items: center;
+}
+#text-area-in {
+   width: 320px; 
+   margin: 14px;
+}
+#text-area-out {
+    width: 60%;
+    margin: 14px;
+}
+#text-area-in {
+    float: left;
+}
+#text-area-out {
+    float: right;
+}
+#text-area-in textarea {
+    width: 100%;
+    height: 60vh;
+    max-height: 600px;
+    white-space: nowrap;
+    overflow:  auto;
+    resize: none;
+}
+#text-area-out textarea {
+    width: 100%;
+    height: 60vh;
+    max-height: 600px;
+    white-space: nowrap;
+    overflow:  auto;
+    resize: none;
+}
+.field-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#area-content {
+    display: flex;
+}
+
+#content-center {
+    width: 200px;
+    margin-top: 25px;
+}
+#btn-gerar, #btn-copAll {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}

@@ -1,0 +1,59 @@
+﻿#selects-content {
+	position: relative;
+	padding: 4px;
+}
+#slc-filias {
+	font-size: 18px;
+    padding: 5px;
+    height: 35px;
+	margin-left: 8px;
+	cursor: pointer;
+}
+#total-filial {
+    position: absolute;
+    background-color: mediumaquamarine;
+    width: 45px;
+    height: 26px;
+    border-radius: 4px;
+    right: 7px;
+	top: 8px;
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+
+.filias-content {
+	position: absolute;
+	top: 38px;
+	left: 50px;
+	padding: 5px;
+	font-size: 12px;
+	white-space: nowrap;
+	height: 500px;
+	overflow-y: scroll;
+	background-color: white;
+	border: 1px solid #888;
+}
+.hidden {
+	display: none;
+}
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+ul hr {
+	margin: 5px 0;
+}
+ul li {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding: 1px;
+}
+ul li label {
+	margin-left: 3px;
+}
+ul li:hover {
+	background-color: rgba(0, 0, 253, 0.7);
+	color: white;
+}

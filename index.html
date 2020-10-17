@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles/multiselect.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Inportador</title>
+</head>
+
+<body>
+    <header>
+        <h3>Gerar planilha para importação</h3>
+    </header>
+    <main>
+        <div class="content">
+            <fieldset class="config-filias">
+                <legend>Selecione as filias</legend>
+
+                <fieldset id="regional">
+                    <legend>Regional</legend>
+                    <input type="checkbox" name="r-sao-luis" id="r-sao-luis" checked>
+                    <label for="r-sao-luis">São Luís</label>
+
+                    <input type="checkbox" name="r-maranhao" id="r-maranhao">
+                    <label for="r-maranhao">Maranhão</label>
+
+                    <input type="checkbox" name="r-para" id="r-para">
+                    <label for="r-para">Pará</label>
+                </fieldset>
+
+                <fieldset id="bandeira">
+                    <legend>Bandeira</legend>
+                    <input type="checkbox" name="b-mateus" id="b-mateus" checked>
+                    <label for="b-mateus">Mateus</label>
+
+                    <input type="checkbox" name="b-camino" id="b-camino">
+                    <label for="b-camino">Camino</label>
+
+                    <input type="checkbox" name="b-pontomax" id="b-pontomax">
+                    <label for="b-pontomax">Ponto max</label>
+
+                    <input type="checkbox" name="b-eletro" id="b-eletro">
+                    <label for="b-eletro">Eletro</label>
+                </fieldset>
+
+                <fieldset id="tipo">
+                    <legend>Tipo</legend>
+                    <input type="checkbox" name="t-mix" id="t-mix" checked>
+                    <label for="t-mix">Mix</label>
+
+                    <input type="checkbox" name="t-varejo" id="t-varejo">
+                    <label for="t-varejo">Varejo</label>
+                </fieldset>
+
+                <div id="selects-content">
+                    <label for="filias">Filias</label>
+                    <input type="text" name="filias" id="slc-filias" placeholder="">
+
+                    <div class="filias-content hidden">
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="select-all" id="select-all" value="0">
+                                <label for="select-all">SELECIONAR</label>
+                            </li>
+                            <hr>
+                        </ul>
+                    </div>
+                    
+                    <div id="total-filial">0</div>
+                </div>
+
+            </fieldset>
+        </div>
+
+        <div id="area-content">
+            <fieldset id="text-area-in">
+                <legend>Entrada(Código e preço)</legend>
+                <textarea id="textarea-in"></textarea>
+                <div class="field-buttons">
+                    <button id="btn-limpar">Limpar</button>
+                </div>
+            </fieldset>
+
+            <div id="content-center">
+
+                <label for="t-promocao">Tipo de promoção</label>
+                <select name="t-promocao" id="t-promocao">
+                    <option value="1">1-MÍDIA</option>
+                    <option value="2">2-ENCARTE</option>
+                    <option value="3">3-VENCIMENTO</option>
+                    <option value="4">4-ACOMPANHAMENTO</option>
+                    <option value="5">5-PONTO EXTRA</option>
+                    <option value="6">6-RÁDIO ONLINE</option>
+                    <option value="7">7-PROMOÇAO COMERCIAL</option>
+                    <option value="8">8-PREÇOS PRICE</option>
+                    <option value="10">10-APP</option>
+                    <option value="11">11-ACORDO COMERCIAL</option>
+                </select>
+
+                <fieldset id="categoria">
+                    <legend>Categoria</legend>
+                    <input type="checkbox" name="c-varejo" id="c-varejo" checked>
+                    <label for="c-varejo">Varejo</label>
+
+                    <input type="checkbox" name="c-atacado" id="c-atacado" checked>
+                    <label for="c-atacado">Atacado</label>
+                </fieldset>
+
+                <fieldset id="date">
+                    <legend>Data</legend>
+
+                    <label for="data-ini">Inicio</label>
+                    <input type="date" name="data-ini" id="data-ini">
+
+                    <label for="data-fim">Fim</label>
+                    <input type="date" name="data-fim" id="data-fim">
+                </fieldset>
+
+                <button id="btn-gerar">Gerar ></button>
+                <button id="btn-copAll" disabled>Copiar tudo</button>
+            </div>
+
+            <fieldset id="text-area-out">
+                <legend>Saida</legend>
+                <textarea id="textarea-out"></textarea>
+                <div class="field-buttons">
+                    <button id="btn-copiar">Copiar</button>
+                    <h5 id="total-linhas">Total de linhas: 0</h5>
+                </div>
+            </fieldset>
+        </div>
+
+    </main>
+    <script src="scripts/filias.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/types.js"></script>
+    <script src="scripts/generate.js"></script>
+    <script>
+        const slcFilias = document.querySelector('#slc-filias')
+        const filiasContent = document.querySelector('.filias-content')
+
+        slcFilias.addEventListener('click', function (event) {
+            if (event.target.id == "slc-filias")
+                filiasContent.classList.toggle('hidden')
+        })
+        filiasContent.addEventListener('click', function (event) {
+            filiasContent.classList.remove('hidden')
+        })
+        document.addEventListener('click', function (event) {
+            if (event.target.classList[0] == "slc") return
+
+            if (event.target.id != "slc-filias")
+                filiasContent.classList.add('hidden')
+        });
+    </script>
+</body>
+
+</html>
