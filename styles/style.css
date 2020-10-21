@@ -71,3 +71,49 @@
     padding: 8px;
     margin: 10px 0;
 }
+/* Content incluir ou excluir filial */
+div.content-add {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content-add.hidden {
+    display: none;
+}
+div.ctent-add-filial {
+    width: 380px;
+    height: 325px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #888;
+}
+div.ctent-add-filial hr {
+    margin-top: 8px;
+}
+div.ctent-add-filial input, select {
+    width: 100%;
+    margin: 0 0 8px 0;
+    padding: 4px;
+}
+div.ctent-add-filial label:nth-child(1) {
+    display: block;
+    padding-top: 14px;
+}
+button#btn-salvar {
+    float: right;
+    margin-top: 20px;
+}
+button#btn-excluir {
+    margin-top: 20px;
+}
+div#ctt-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
