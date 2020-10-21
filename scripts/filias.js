@@ -56,12 +56,12 @@ function writeFilias(param) {
             </li>`
     }
 
-    inputsFilias = document.querySelectorAll('li input.slc')
+    inputsFilias = document.querySelectorAll('.slc')
     inputsFilias.forEach(input => {
         input.addEventListener('change', onSelect)
     })
 
-    document.querySelector('input#select-all').addEventListener('change', event => selectFilias(event, select()))
+    document.querySelector('#select-all').addEventListener('change', event => selectFilias(event, select()))
 }
 
 function selectFilias(event, arr) {
@@ -189,21 +189,4 @@ function saoLuis(item, fil, region) {
         if (regional && mateus && varejo)
             fil.push(item.id)
     }
-
 }
-// const { Console } = require("console")
-// // Save file
-// const fs = require("fs")
-// let filiasJSON = []
-
-// function saveFile() {
-//     filiasJSON.sort(function (a, b) { return a.id - b.id })
-
-//     let str = JSON.stringify(filiasJSON)
-
-//     fs.writeFile('mynewfile3.json', str, function (err) {
-//         if (err) throw err;
-//         console.log('Saved!');
-//     });
-
-// }
