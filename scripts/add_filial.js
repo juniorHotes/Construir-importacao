@@ -1,4 +1,5 @@
 const num_filial = document.querySelector('#num-filial')
+const nome_loja = document.querySelector('#nome-loja')
 const add_regional = document.querySelector('#add-regional')
 const add_bandeira = document.querySelector('#add-bandeira')
 const add_tipo = document.querySelector('#add-tipo')
@@ -60,22 +61,41 @@ num_filial.addEventListener("click", (event) => {
 })
 
 function enabledDisabled(rmAttr, setAttr) {
+    nome_loja.removeAttribute(rmAttr)
     add_regional.removeAttribute(rmAttr)
     add_bandeira.removeAttribute(rmAttr)
     add_tipo.removeAttribute(rmAttr)
 
+    nome_loja.setAttribute(setAttr, setAttr)
     add_regional.setAttribute(setAttr, setAttr)
     add_bandeira.setAttribute(setAttr, setAttr)
     add_tipo.setAttribute(setAttr, setAttr)
 }
 
 btn_salvar.addEventListener("click", () => {
-    console.log(add_regional.value)
-    console.log(add_bandeira.value)
-    console.log(add_tipo.value)
 
-    if (add_regional.value == "" || add_bandeira.value == "" || add_tipo.value == "") {
-        return alert("Todos os campos são obrigatórios. \nInsira as informações corretas para a filialId que deseja cadastrar")
+    if (nome_loja.value == "" || add_regional.value == "" || add_bandeira.value == "" || add_tipo.value == "") {
+        return alert("Todos os campos são obrigatórios. \nInsira as informações que correspondem para a filial que deseja cadastrar")
+    } else {
+        const loja = {
+            id: filial,
+            bandeira: add_bandeira.value,
+            nome: nome_loja.value.toUpperCase(),
+            regional: add_regional.value,
+            tipo: add_tipo.value
+        }
+
+        allFilias.push(loja)
+
+        allFilias.sort((a, b) => { return a.id - b.id })
+
+        saveFile(allFilias)
+
+        alert("Loja cadastrada")
+
+        setTimeout(() => {
+            window.location = "index.html"
+        }, 500);
     }
 })
 
@@ -87,12 +107,13 @@ btn_excluir.addEventListener("click", () => {
 
     var r = confirm("Tem certeza que deseja excluir a filial "+ filial +"?")
     if (r == true) {
-        console.log("você pressionou OK!")
+        console.log("OK!")
 
         num_filial.value = ""
 
         allFilias.splice(idfilial, 1)
-        console.log(allFilias)
+
+        saveFile(allFilias)
 
         alert("Filial "+ filial +" foi excuída")
         setTimeout(() => {
@@ -100,26 +121,22 @@ btn_excluir.addEventListener("click", () => {
         }, 500);
     }
     else {
-        console.log("Você pressionou Cancelar!")
+        console.log("Cancelado!")
 
         num_filial.focus()
         console.log(allFilias)
     }
 })
 
-// const { Console } = require("console")
-// // Save file
-// const fs = require("fs")
-// let filiasJSON = []
+// Save file
+const fs = require("fs")
 
-// function saveFile() {
-//     filiasJSON.sort(function (a, b) { return a.id - b.id })
+function saveFile(obj) {
 
-//     let str = JSON.stringify(filiasJSON)
+    let str = JSON.stringify(obj)
 
-//     fs.writeFile('mynewfile3.json', str, function (err) {
-//         if (err) throw err;
-//         console.log('Saved!');
-//     });
-
-// }
+    fs.writeFile('./json/filias.json', str, function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+    });
+}
