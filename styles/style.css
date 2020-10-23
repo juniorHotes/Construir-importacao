@@ -66,10 +66,22 @@
     width: 200px;
     margin-top: 25px;
 }
-#btn-gerar, #btn-copAll {
+fieldset#categoria {
+    margin-bottom: 10px;
+}
+#btn-gerar {
     width: 100%;
     padding: 8px;
     margin: 10px 0;
+    font-size: 14px;
+    position: relative;
+}
+#btn-gerar span {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 12px;
+    color: green;
 }
 /* Content incluir ou excluir filial */
 div.content-add {
@@ -116,4 +128,22 @@ div#ctt-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+fieldset#modelo-content {
+    margin-bottom: 10px;
+}
+fieldset#modelo-content div:nth-child(2){
+    float: left;
+    margin-right: 75px;
+}
+#content-center #motivo-midia, #t-promocao {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+#ctt-motivo-midia {
+    display: block;
+}
+#ctt-motivo-midia hidden {
+    display: none;
 }
