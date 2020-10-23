@@ -83,33 +83,43 @@
                 <textarea id="textarea-in"></textarea>
                 <div class="field-buttons">
                     <button id="btn-limpar">Limpar</button>
+                    <!-- <button id="btn-split">Slit</button> -->
                 </div>
             </fieldset>
 
             <div id="content-center">
+                <fieldset id="modelo-content">
+                    <legend>Modelo do arquivo</legend>
+                    <div>
+                        <input type="radio" name="modelo" id="m402" checked>
+                        <label for="m402">402</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="modelo" id="m1118">
+                        <label for="m1118">1118</label>
+                    </div>
+                </fieldset>
+
+                <div id="append-categoria-1118"></div>
 
                 <label for="t-promocao">Tipo de promoção</label>
-                <select name="t-promocao" id="t-promocao">
-                    <option value="1">1-MÍDIA</option>
-                    <option value="2">2-ENCARTE</option>
-                    <option value="3">3-VENCIMENTO</option>
-                    <option value="4">4-ACOMPANHAMENTO</option>
-                    <option value="5">5-PONTO EXTRA</option>
-                    <option value="6">6-RÁDIO ONLINE</option>
-                    <option value="7">7-PROMOÇAO COMERCIAL</option>
-                    <option value="8">8-PREÇOS PRICE</option>
-                    <option value="10">10-APP</option>
-                    <option value="11">11-ACORDO COMERCIAL</option>
-                </select>
+                <input type="number" name="t-promocao" id="t-promocao" min="0">
 
-                <fieldset id="categoria">
-                    <legend>Categoria</legend>
-                    <input type="checkbox" name="c-varejo" id="c-varejo" checked>
-                    <label for="c-varejo">Varejo</label>
+                <div class="ctt-motivo-midia hidden">
+                    <label for="motivo-midia">Motivo Mídia</label>
+                    <input type="number" name="motivo-midia" id="motivo-midia" min="0">
+                </div>
 
-                    <input type="checkbox" name="c-atacado" id="c-atacado" checked>
-                    <label for="c-atacado">Atacado</label>
-                </fieldset>
+                <div id="append-categoria-402">
+                    <fieldset id="categoria">
+                        <legend>Categoria</legend>
+                        <input type="checkbox" name="c-varejo" id="c-varejo" checked>
+                        <label for="c-varejo">Varejo</label>
+
+                        <input type="checkbox" name="c-atacado" id="c-atacado" checked>
+                        <label for="c-atacado">Atacado</label>
+                    </fieldset>
+                </div>
 
                 <fieldset id="date">
                     <legend>Data</legend>
@@ -121,8 +131,7 @@
                     <input type="date" name="data-fim" id="data-fim">
                 </fieldset>
 
-                <button id="btn-gerar">Gerar ></button>
-                <button id="btn-copAll" disabled>Copiar tudo</button>
+                <button id="btn-gerar">Gerar <span>Ctrl+G</span></button>
             </div>
 
             <fieldset id="text-area-out">
