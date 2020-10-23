@@ -8,18 +8,32 @@ let lisAtacado = []
 
 function creatList(list, cat, _numFilias) {
     for (let index = 0; index < inLine.length; index++) {
-        list.push(
-            _filias[_numFilias] + "\t" +
-            _tipoPromocao + "\t" +
-            cat + "\t" +
-            inLine[index] + "\t" +
-            _dataIni + "\t" +
-            _dataFim
-        )
+
+        if (isModel) {
+            list.push(
+                _filias[_numFilias] + "\t" +
+                _tipoPromocao + "\t" +
+                cat + "\t" +
+                inLine[index] + "\t" +
+                _dataIni + "\t" +
+                _dataFim
+            )
+        } else {
+            list.push(
+                _filias[_numFilias] + "\t" +
+                cat + "\t" +
+                _tipoPromocao + "\t" +
+                _motivoMidia + "\t" +
+                inLine[index] + "\t" +
+                _dataIni + "\t" +
+                _dataFim
+            )
+        }
+
         textareaOut.innerHTML += list[list.length - 1] + "\n"
 
         let total = _categoria == 3 ? list.length * 2 : list.length
-        
+
         totalLinhas.innerHTML = "Total de linhas: " + total
     }
 }
@@ -37,7 +51,7 @@ function listcreat(value) {
                 creatList(lisAtacado, 2, numFilias)
                 numFilias++
             }
-        }    
+        }
     }
 }
 
@@ -73,6 +87,7 @@ btnGerar.addEventListener('click', () => {
 })
 
 const btnLimpar = document.querySelector('#btn-limpar')
+const btnSplit = document.querySelector('#btn-split')
 const btnCopiar = document.querySelector('#btn-copiar')
 
 btnLimpar.addEventListener('click', () => {
@@ -83,3 +98,48 @@ btnCopiar.addEventListener('click', () => {
     textareaOut.select()
     document.execCommand("copy");
 })
+
+document.addEventListener('keypress', (event) => {
+    if (event.ctrlKey === false && event.code != 'KeyG') return
+        
+    if (event.ctrlKey === true && event.code === 'KeyG') {
+        console.log(event) 
+        btnGerar.focus()
+        btnGerar.click()
+    }
+})
+
+textareaIn.addEventListener('paste', () => {
+    setTimeout(() => {
+        textareaIn.value = textareaIn.value.trim()
+    }, 200);
+})
+
+// btnSplit.addEventListener('click', () => {
+//     const ar1 = textareaIn.value.split('\n')
+
+//     let code = []
+//     let price = []
+
+//     ar1.forEach(element => {
+//         var posCode = element.indexOf('\t');
+//         var slcCode = element.slice(0, posCode).trim()
+
+//         var multSplice = slcCode.split(/[ -.:;?!~,`"&|()<>{}\[\]\t\s\r\n/\\]+/)
+
+//         console.log(multSplice)
+
+//         var posPrice = element.lastIndexOf("\t");
+//         var slcPreco = element.slice(posPrice, element.lenght).trim()
+
+//         var isBar = slcCode.split(/[ -.:;?!~,`"&|()<>{}\[\]\t\s\r\n/\\]+/)
+
+//         // console.log(parseInt(slcCode) + "-" + slcPreco)
+//         // console.log(slcCode)
+
+//     });
+
+//     // console.log(code)
+//     // console.log(price)
+
+// })
