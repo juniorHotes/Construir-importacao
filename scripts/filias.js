@@ -61,7 +61,9 @@ function writeFilias(param) {
         input.addEventListener('change', onSelect)
     })
 
-    document.querySelector('#select-all').addEventListener('change', event => selectFilias(event, select()))
+    const selectElement = document.querySelector('#select-all')
+    selectElement.addEventListener('change', event => selectFilias(event, select()))
+    
 }
 
 function selectFilias(event, arr) {
@@ -94,7 +96,6 @@ function selectFilias(event, arr) {
         })
     }
 
-    console.log(_filias)
     return _filias = _filiasSelected
 }
 
@@ -129,6 +130,7 @@ const t_varejo = document.querySelector('#t-varejo')
 t_varejo.addEventListener('change', event => selectFilias(event, select()))
 
 function select() {
+
     let fil = []
 
     allFilias.filter((item) => {
@@ -153,31 +155,28 @@ function _filter(item, fil) {
 function saoLuis(item, fil, region) {
     let regional = (item.regional == region)
 
-    let mateus = (item.bandeira == "MATEUS SUPERMERCADOS")
-    let posterus = (item.bandeira == "POSTERUS SUPERMERCADOS")
-    let carone = (item.bandeira == "MERCADINHO CARONE")
-    let pontoMax = (item.bandeira == "CONVENIERE SUPERMERCADOS")
-    let eletro = (item.bandeira == "ELETRO MATEUS")
-    let varejo = (item.tipo == "varejo")
-    let atacarejo = (item.tipo == "atacarejo")
+    let mateus = (item.bandeira == "MATEUS SUPERMERCADOS"),
+    posterus = (item.bandeira == "POSTERUS SUPERMERCADOS"),
+    carone = (item.bandeira == "MERCADINHO CARONE"),
+    pontoMax = (item.bandeira == "CONVENIERE SUPERMERCADOS"),
+    eletro = (item.bandeira == "ELETRO MATEUS"),
+    varejo = (item.tipo == "varejo"),
+    atacarejo = (item.tipo == "atacarejo")
 
     if (b_mateus.checked && t_mix.checked && t_varejo.checked) {
         if (regional && mateus)
             fil.push(item.id)
     }
-    if (b_camino.checked) {
+    if (b_camino.checked && t_varejo.checked) {
         if (regional && (carone || posterus))
             fil.push(item.id)
     }
-    if (b_pontomax.checked) {
+    if (b_pontomax.checked && t_varejo.checked) {
         if (regional && (pontoMax))
             fil.push(item.id)
     }
 
     if (b_eletro.checked) {
-        t_mix.checked = true
-        t_varejo.checked = true
-
         if (regional && eletro)
             fil.push(item.id)
     }
