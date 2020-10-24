@@ -8,7 +8,6 @@ let lisAtacado = []
 
 function creatList(list, cat, _numFilias) {
     for (let index = 0; index < inLine.length; index++) {
-
         if (isModel) {
             list.push(
                 _filias[_numFilias] + "\t" +
@@ -29,11 +28,9 @@ function creatList(list, cat, _numFilias) {
                 _dataFim
             )
         }
-
         textareaOut.innerHTML += list[list.length - 1] + "\n"
 
         let total = _categoria == 3 ? list.length * 2 : list.length
-
         totalLinhas.innerHTML = "Total de linhas: " + total
     }
 }
@@ -70,6 +67,13 @@ btnGerar.addEventListener('click', () => {
 
     inLine = textareaIn.value.split('\n')
 
+    let exed = _filias.length * inLine.length
+    if (_categoria == 3)
+        exed *= 2
+
+    if (exed > 10000)
+        return alert("O número de linhas exede o total de 10000")
+
     if (inLine[inLine.length - 1] == "") {
         inLine.splice(inLine.length - 1, 1)
     }
@@ -101,9 +105,9 @@ btnCopiar.addEventListener('click', () => {
 
 document.addEventListener('keypress', (event) => {
     if (event.ctrlKey === false && event.code != 'KeyG') return
-        
+
     if (event.ctrlKey === true && event.code === 'KeyG') {
-        console.log(event) 
+        console.log(event)
         btnGerar.focus()
         btnGerar.click()
     }
@@ -143,3 +147,4 @@ textareaIn.addEventListener('paste', () => {
 //     // console.log(price)
 
 // })
+const progress_bar = document.querySelector('.progress-bar')
