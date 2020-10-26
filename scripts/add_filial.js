@@ -91,7 +91,7 @@ btn_salvar.addEventListener("click", () => {
 
         saveFile(allFilias)
 
-        alert("Loja cadastrada")
+        alert("Loja "+ loja.id +" cadastrada")
 
         setTimeout(() => {
             window.location = "index.html"
@@ -124,7 +124,6 @@ btn_excluir.addEventListener("click", () => {
         console.log("Cancelado!")
 
         num_filial.focus()
-        console.log(allFilias)
     }
 })
 
@@ -135,7 +134,7 @@ function saveFile(obj) {
 
     let str = JSON.stringify(obj)
 
-    fs.writeFile('./json/filias.json', str, function (err) {
+    fs.writeFile('resources/app/json/filias.json', str, function (err) {
         if (err) throw err;
         console.log('Saved!');
     });
