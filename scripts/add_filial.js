@@ -43,7 +43,7 @@ num_filial.addEventListener('keyup', (event) => {
                 event.target.value = value
 
                 event.target.select()
-                
+
                 return filial = value
             }
         }, 1000);
@@ -91,7 +91,7 @@ btn_salvar.addEventListener("click", () => {
 
         saveFile(allFilias)
 
-        alert("Loja "+ loja.id +" cadastrada")
+        alert("Loja " + loja.id + " cadastrada")
 
         setTimeout(() => {
             window.location = "index.html"
@@ -105,7 +105,7 @@ btn_excluir.addEventListener("click", () => {
         return item.id == filial
     })
 
-    var r = confirm("Tem certeza que deseja excluir a filial "+ filial +"?")
+    var r = confirm("Tem certeza que deseja excluir a filial " + filial + "?")
     if (r == true) {
         console.log("OK!")
 
@@ -115,7 +115,7 @@ btn_excluir.addEventListener("click", () => {
 
         saveFile(allFilias)
 
-        alert("Filial "+ filial +" foi excuída")
+        alert("Filial " + filial + " foi excuída")
         setTimeout(() => {
             window.location = "index.html"
         }, 500);
@@ -135,7 +135,13 @@ function saveFile(obj) {
     let str = JSON.stringify(obj)
 
     fs.writeFile('resources/app/json/filias.json', str, function (err) {
-        if (err) throw err;
-        console.log('Saved!');
+        if (err) {
+            fs.writeFile('json/filias.json', str, function (err) {
+                if (err) throw err
+                console.log('Loja salva!')
+            })
+        } else {
+            console.log('Loja salva!')
+        }
     });
 }
