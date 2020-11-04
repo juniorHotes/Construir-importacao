@@ -55,13 +55,16 @@ function listcreat(value) {
 var inLine = []
 btnGerar.addEventListener('click', () => {
 
-    if (_dataFim == "") {
-        return alert("Defina a data final da promoção")
-    } else if (_dataIni == "") {
-        return alert("Defina a data inicial da promoção")
-    } else if (_filias.length == 0) {
+    if (_filias.length === 0)
         return alert("Selecione ao menos uma loja")
-    }
+    else if (_tipoPromocao == "")
+        return alert("Defina o tipo de promoção")
+    else if (isModel === false && _motivoMidia == "")
+        return alert("Defina o motivo de mídia")
+    else if (_dataIni == "")
+        return alert("Defina a data inicial da promoção")
+    else if (_dataFim == "")
+        return alert("Defina a data final da promoção")
 
     textareaOut.innerHTML = ""
 
