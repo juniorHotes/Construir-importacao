@@ -38,7 +38,7 @@ function onSelect(event) {
     }
 
     totalFilial.innerHTML = _filiasSelected.length
-    sFilial.setAttribute("placeholder", _filiasSelected.sort(sortList))
+    sFilial.value = _filiasSelected.sort(sortList)
 
     return _filias = _filiasSelected.sort(sortList)
 }
@@ -80,7 +80,7 @@ function selectFilias(event, arr) {
     _filiasSelected = []
 
     totalFilial.innerHTML = _filiasSelected.length
-    sFilial.setAttribute("placeholder", _filiasSelected)
+    sFilial.value = _filiasSelected
 
     if (event.target.checked) {
         let filtered = arr
@@ -96,7 +96,7 @@ function selectFilias(event, arr) {
                 _filiasSelected.push(input.defaultValue)
 
                 totalFilial.innerHTML = _filiasSelected.length
-                sFilial.setAttribute("placeholder", _filiasSelected)
+                sFilial.value = _filiasSelected
             }
         })
     } else {
