@@ -212,14 +212,14 @@ document.addEventListener('click', function (event) {
 // pesquise a loja na lista ao digitar no teclado númerico
 let searchValue = []
 document.addEventListener('keypress', (event) => {
-    if(filiasContent.getAttribute("class") == "filias-content hidden") return
+    if (filiasContent.getAttribute("class") == "filias-content hidden") return
 
     let numpad = "Numpad" + event.key
     let digit = "Digit" + event.key
 
     if (event.code == numpad || event.code == digit) {
 
-        if(searchValue.length == 0 && event.key == 0) return
+        if (searchValue.length == 0 && event.key == 0) return
 
         searchValue.push(event.key)
 
@@ -237,5 +237,37 @@ document.addEventListener('keypress', (event) => {
             }
         })
     }
-})        
+})
+
+sFilial.addEventListener('paste', (event) => {
+    let paste = []
+
+    _filias = []
+    _filiasSelected = []
+
+    totalFilial.innerHTML = _filiasSelected.length
+
+    setTimeout(() => {
+        paste = event.target.value.split(/[ -.:;?!~,`"&|()<>{}\[\]\t\s\r\n/\\]+/)
+
+        let filtered = paste
+
+        inputsFilias.forEach((input) => {
+            input.checked = false
+
+            let idx = filtered.indexOf(input.defaultValue)
+
+            if (input.defaultValue == filtered[idx]) {
+                input.checked = true
+
+                _filiasSelected.push(input.defaultValue)
+
+                totalFilial.innerHTML = _filiasSelected.length
+
+                return _filias = _filiasSelected
+            }
+        })
+
+    }, 500);
+})
 //#endregion
