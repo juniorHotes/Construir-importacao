@@ -202,23 +202,6 @@
     <script src="scripts/types.js"></script>
     <script src="scripts/generate.js"></script>
     <script>
-        const slcFilias = document.querySelector('#slc-filias')
-        const filiasContent = document.querySelector('.filias-content')
-
-        slcFilias.addEventListener('click', function (event) {
-            if (event.target.id == "slc-filias")
-                filiasContent.classList.toggle('hidden')
-        })
-        filiasContent.addEventListener('click', function (event) {
-            filiasContent.classList.remove('hidden')
-        })
-        document.addEventListener('click', function (event) {
-            if (event.target.classList[0] == "slc") return
-
-            if (event.target.id != "slc-filias")
-                filiasContent.classList.add('hidden')
-        });
-
         const btn_add_filial = document.querySelector('#btn-add-filial')
         const btn_closed = document.querySelector('#btn-closed')
         const content_add_filial = document.querySelector('.content-add')
