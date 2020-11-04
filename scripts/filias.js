@@ -248,7 +248,7 @@ sFilial.addEventListener('paste', (event) => {
     totalFilial.innerHTML = _filiasSelected.length
 
     setTimeout(() => {
-        paste = event.target.value.split(/[ -.:;?!~,`"&|()<>{}\[\]\t\s\r\n/\\]+/)
+        paste = event.target.value.split(/[ -.:;?!~,`"&eE|()<>{}\[\]\t\s\r\n/\\]+/)
 
         let filtered = paste
 
