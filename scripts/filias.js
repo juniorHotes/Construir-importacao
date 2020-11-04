@@ -59,11 +59,20 @@ function writeFilias(param) {
     inputsFilias = document.querySelectorAll('.slc')
     inputsFilias.forEach(input => {
         input.addEventListener('change', onSelect)
+
+        input.addEventListener('focus', (event) => {
+            event.target.parentElement.style.background = "#0000fdb3"
+            event.target.parentElement.children[1].style.color = "#FFF"
+        })
+        input.addEventListener('blur', (event) => {
+            event.target.parentElement.style.background = "#FFF"
+            event.target.parentElement.children[1].style.color = "#000"
+        })
     })
 
     const selectElement = document.querySelector('#select-all')
     selectElement.addEventListener('change', event => selectFilias(event, select()))
-    
+
 }
 
 function selectFilias(event, arr) {
@@ -102,30 +111,24 @@ function selectFilias(event, arr) {
 // Regionais
 const r_sao_luis = document.querySelector('#r-sao-luis')
 r_sao_luis.addEventListener('change', event => selectFilias(event, select()))
-
 const r_maranhao = document.querySelector('#r-maranhao')
 r_maranhao.addEventListener('change', event => selectFilias(event, select()))
-
 const r_para = document.querySelector('#r-para')
 r_para.addEventListener('change', event => selectFilias(event, select()))
 
 // Bandeira
 const b_mateus = document.querySelector('#b-mateus')
 b_mateus.addEventListener('change', event => selectFilias(event, select()))
-
 const b_camino = document.querySelector('#b-camino')
 b_camino.addEventListener('change', event => selectFilias(event, select()))
-
 const b_pontomax = document.querySelector('#b-pontomax')
 b_pontomax.addEventListener('change', event => selectFilias(event, select()))
-
 const b_eletro = document.querySelector('#b-eletro')
 b_eletro.addEventListener('change', event => selectFilias(event, select()))
 
 // Tipo de loja
 const t_mix = document.querySelector('#t-mix')
 t_mix.addEventListener('change', event => selectFilias(event, select()))
-
 const t_varejo = document.querySelector('#t-varejo')
 t_varejo.addEventListener('change', event => selectFilias(event, select()))
 
@@ -156,12 +159,12 @@ function saoLuis(item, fil, region) {
     let regional = (item.regional == region)
 
     let mateus = (item.bandeira == "MATEUS SUPERMERCADOS"),
-    posterus = (item.bandeira == "POSTERUS SUPERMERCADOS"),
-    carone = (item.bandeira == "MERCADINHO CARONE"),
-    pontoMax = (item.bandeira == "CONVENIERE SUPERMERCADOS"),
-    eletro = (item.bandeira == "ELETRO MATEUS"),
-    varejo = (item.tipo == "varejo"),
-    atacarejo = (item.tipo == "atacarejo")
+        posterus = (item.bandeira == "POSTERUS SUPERMERCADOS"),
+        carone = (item.bandeira == "MERCADINHO CARONE"),
+        pontoMax = (item.bandeira == "CONVENIERE SUPERMERCADOS"),
+        eletro = (item.bandeira == "ELETRO MATEUS"),
+        varejo = (item.tipo == "varejo"),
+        atacarejo = (item.tipo == "atacarejo")
 
     if (b_mateus.checked && t_mix.checked && t_varejo.checked) {
         if (regional && mateus)
@@ -189,3 +192,50 @@ function saoLuis(item, fil, region) {
             fil.push(item.id)
     }
 }
+
+//#region inpute de seleção de filias
+const filiasContent = document.querySelector('.filias-content')
+
+sFilial.addEventListener('click', function (event) {
+    if (event.target.id == "slc-filias")
+        filiasContent.classList.toggle('hidden')
+})
+filiasContent.addEventListener('click', function () {
+    filiasContent.classList.remove('hidden')
+})
+document.addEventListener('click', function (event) {
+    if (event.target.classList[0] == "slc") return
+
+    if (event.target.id != "slc-filias")
+        filiasContent.classList.add('hidden')
+});
+// pesquise a loja na lista ao digitar no teclado númerico
+let searchValue = []
+document.addEventListener('keypress', (event) => {
+    if(filiasContent.getAttribute("class") == "filias-content hidden") return
+
+    let numpad = "Numpad" + event.key
+    let digit = "Digit" + event.key
+
+    if (event.code == numpad || event.code == digit) {
+
+        if(searchValue.length == 0 && event.key == 0) return
+
+        searchValue.push(event.key)
+
+        let search = searchValue.join('')
+        let time = 700
+
+        inputsFilias.forEach(input => {
+            if (search == input.value) {
+                input.focus()
+
+                setTimeout(() => {
+                    searchValue = []
+                    search = ""
+                }, time)
+            }
+        })
+    }
+})        
+//#endregion
