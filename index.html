@@ -132,6 +132,7 @@
                 </fieldset>
 
                 <button id="btn-gerar">Gerar <span>Ctrl+G</span></button>
+                <button id="btn-w-remover">Remover códigos <span>Ctrl+R</span></button>
             </div>
 
             <fieldset id="text-area-out">
@@ -191,6 +192,18 @@
             </div>
         </div>
 
+        <div class="content-rm-codigo hidden">
+            <div class="rm-codigo">
+                <div class="header-rm">
+                    <h2>Remover códigos</h2>
+                    <button id="rm-closed">X</button>
+                </div>
+                <label for="rm-txt-area">Adicione os códigos aqui</label>
+                <textarea name="rm-txt-area" id="rm-txt-area"></textarea>
+                <button id="btn-rm">Remover</button>
+            </div>
+        </div>
+
         <!-- <div class="ctt-progress">
             <div class="progress-bar">0%</div>
         </div> -->
@@ -201,6 +214,8 @@
     <script src="scripts/date.js"></script>
     <script src="scripts/types.js"></script>
     <script src="scripts/generate.js"></script>
+    <script src="scripts/code_remove.js"></script>
+
     <script>
         const btn_add_filial = document.querySelector('#btn-add-filial')
         const btn_closed = document.querySelector('#btn-closed')
