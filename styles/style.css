@@ -147,3 +147,61 @@ fieldset#modelo-content div:nth-child(2){
 #ctt-motivo-midia hidden {
     display: none;
 }
+/* Remover código */
+#btn-w-remover {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10%;
+    font-size: 14px;
+    position: relative;
+}
+#btn-w-remover span {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 12px;
+    color: green;
+}
+div.content-rm-codigo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content-rm-codigo.hidden {
+    display: none;
+}
+div.rm-codigo {
+    width: 480px;
+    height: 580px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #888;
+}
+div.rm-codigo h2 {
+    margin-bottom: 10px;
+}
+textarea#rm-txt-area {
+    width: 100%;
+    height: 80%;
+    white-space: nowrap;
+    overflow:  auto;
+    resize: none;
+}
+button#btn-rm {
+    width: 200px;
+    padding: 8px;
+    margin: 10px 129px;
+    font-size: 14px; 
+}
+div.header-rm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
