@@ -193,15 +193,20 @@ textarea#rm-txt-area {
     overflow:  auto;
     resize: none;
 }
-button#btn-rm {
-    width: 200px;
+div.ctt-buttons-rm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+button#btn-remover, button#btn-desfazer {
+    width: 170px;
     padding: 8px;
-    margin: 10px 129px;
     font-size: 14px; 
+    margin-top: 10px;
 }
 div.header-rm {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
