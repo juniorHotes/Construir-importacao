@@ -65,7 +65,7 @@ function writeFilias(param) {
             event.target.parentElement.children[1].style.color = "#FFF"
         })
         input.addEventListener('blur', (event) => {
-            event.target.parentElement.style.background = "#FFF"
+            event.target.parentElement.style.background = "silver"
             event.target.parentElement.children[1].style.color = "#000"
         })
     })
