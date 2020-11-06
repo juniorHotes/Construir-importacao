@@ -12,7 +12,9 @@ rm_closed.addEventListener('click', function () {
 
 const btn_remover = document.querySelector('#btn-remover')
 const btn_desfazer = document.querySelector('#btn-desfazer')
+btn_remover.style.visibility = 'hidden'
 btn_desfazer.style.visibility = 'hidden'
+
 
 const rm_txt_area = document.querySelector('#rm-txt-area')
 
@@ -30,7 +32,7 @@ btn_remover.addEventListener('click', () => {
     code.map(item => {
         let rm = codeIn.indexOf(item)
 
-        if(rm == -1) return
+        if (rm == -1) return
 
         codeIn.splice(rm, 1)
         textIn.splice(rm, 1)
@@ -44,7 +46,7 @@ btn_remover.addEventListener('click', () => {
 })
 btn_desfazer.addEventListener('click', () => {
 
-    if(originalList.length == 0) return
+    if (originalList.length == 0) return
 
     textareaIn.value = ""
     originalList.map(item => textareaIn.value += item + "\n")
@@ -57,5 +59,16 @@ textareaIn.addEventListener('paste', () => {
     setTimeout(() => {
         return originalList = textareaIn.value.split('\n')
     }, 200);
+})
+rm_txt_area.addEventListener('paste', () => {
+    btn_remover.style.visibility = 'visible'
+})
+document.addEventListener('keyup', () => {
+    if (rm_txt_area.value == "") {
+        btn_remover.style.visibility = 'hidden'
+        btn_desfazer.style.visibility = 'hidden'
+    } else {
+        btn_remover.style.visibility = 'visible'
+    }
 })
 
