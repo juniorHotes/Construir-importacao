@@ -71,7 +71,7 @@
 
                     <div id="total-filial">0</div>
 
-                    <button id="btn-add-filial">+</button>
+                    <button class="btn-color-green" id="btn-add-filial">+</button>
                 </div>
 
             </fieldset>
@@ -82,8 +82,8 @@
                 <legend>Entrada(Código e preço)</legend>
                 <textarea id="textarea-in"></textarea>
                 <div class="field-buttons">
-                    <button id="btn-limpar">Limpar</button>
-                    <!-- <button id="btn-split">Slit</button> -->
+                    <button class="btn-color-blue" id="btn-limpar">Limpar</button>
+                    <!-- <button class="btn-color-blue" id="btn-split">Slit</button> -->
                 </div>
             </fieldset>
 
@@ -131,15 +131,15 @@
                     <input type="date" name="data-fim" id="data-fim">
                 </fieldset>
 
-                <button id="btn-gerar">Gerar <span>Ctrl+G</span></button>
-                <button id="btn-w-remover">Remover códigos <span>Ctrl+R</span></button>
+                <button class="btn-color-blue" id="btn-gerar">Gerar <span>Ctrl+G</span></button>
+                <button class="btn-color-green" id="btn-w-remover">Remover códigos</button>
             </div>
 
             <fieldset id="text-area-out">
                 <legend>Saida</legend>
                 <textarea id="textarea-out"></textarea>
                 <div class="field-buttons">
-                    <button id="btn-copiar">Copiar</button>
+                    <button class="btn-color-blue" id="btn-copiar">Copiar</button>
                     <h5 id="total-linhas">Total de linhas: 0</h5>
                 </div>
             </fieldset>
@@ -149,7 +149,7 @@
             <div class="ctent-add-filial">
                 <div id="ctt-head">
                     <h2>Incluir ou excluir uma filial</h2>
-                    <button id="btn-closed">X</button>
+                    <button class="btn-color-red" id="btn-closed">X</button>
                 </div>
                 <hr>
 
@@ -187,8 +187,8 @@
                     </select>
 
                 </div>
-                <button id="btn-salvar">Salvar</button>
-                <button id="btn-excluir">Excluir</button>
+                <button class="btn-color-green" id="btn-salvar">Salvar</button>
+                <button class="btn-color-red" id="btn-excluir">Excluir</button>
             </div>
         </div>
 
@@ -196,13 +196,13 @@
             <div class="rm-codigo">
                 <div class="header-rm">
                     <h2>Remover códigos</h2>
-                    <button id="rm-closed">X</button>
+                    <button class="btn-color-red" id="rm-closed">X</button>
                 </div>
                 <label for="rm-txt-area">Adicione os códigos aqui</label>
                 <textarea name="rm-txt-area" id="rm-txt-area"></textarea>
                 <div class="ctt-buttons-rm">
-                    <button id="btn-desfazer" title="Adicionar novamente os itens que foram removidos">Desfazer</button>
-                    <button id="btn-remover" title="Remover os itens listados no campo de texto acima">Remover</button>
+                    <button class="btn-color-blue" id="btn-desfazer" title="Adicionar novamente os itens que foram removidos">Desfazer</button>
+                    <button class="btn-color-green" id="btn-remover" title="Remover os itens listados no campo de texto acima">Remover</button>
                 </div>
             </div>
         </div>
