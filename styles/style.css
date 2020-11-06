@@ -2,10 +2,40 @@
     margin: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: darkgray;
+}
+textarea, input {
+    background-color: #fafafa;
+}
 .content {
     width: 98%;
     margin: 0 auto;
 }
+button {
+    border: 1px solid #333;
+    color: white;
+    font-weight: 520;
+    padding: 5px 10px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: threedface;
+    border-image: initial;
+}
+button:hover {
+    filter: brightness(0.8);
+    border-style: inset;
+}
+button.btn-color-red {
+    background-color: #ff3300;
+}
+button.btn-color-blue {
+    background-color: #004ad3;
+}
+button.btn-color-green {
+    background-color: #00a149;
+}
+
 .config-filias fieldset {
     float: left;
     margin-right: 5px;
@@ -18,9 +48,12 @@
     float: left;
     margin-top: 8px;
     padding: 3px;
-    border: 2px solid #888;
     display: flex;
     align-items: center;
+    border-width: 2px;
+    border-style: groove;
+    border-color: threedface;
+    border-image: initial;
 }
 #text-area-in {
    width: 320px; 
@@ -81,7 +114,7 @@ fieldset#categoria {
     top: 2px;
     left: 2px;
     font-size: 12px;
-    color: green;
+    color: white;
 }
 /* Content incluir ou excluir filial */
 div.content-add {
@@ -102,7 +135,7 @@ div.ctent-add-filial {
     width: 380px;
     height: 380px;
     padding: 10px;
-    background-color: white;
+    background-color: silver;
     border: 1px solid #888;
 }
 div.ctent-add-filial hr {
@@ -119,10 +152,10 @@ div.ctent-add-filial label:nth-child(1) {
 }
 button#btn-salvar {
     float: right;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 button#btn-excluir {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 div#ctt-head {
     display: flex;
@@ -134,7 +167,7 @@ fieldset#modelo-content {
 }
 fieldset#modelo-content div:nth-child(2){
     float: left;
-    margin-right: 75px;
+    margin-right: 40%;
 }
 #content-center #motivo-midia, #t-promocao {
     width: 100%;
@@ -147,6 +180,12 @@ fieldset#modelo-content div:nth-child(2){
 #ctt-motivo-midia hidden {
     display: none;
 }
+input[name=c-atacado] {
+    margin-left: 13%;
+}
+input[name="data-ini"], input[name="data-fim"] {
+    width: 100%;
+}
 /* Remover código */
 #btn-w-remover {
     width: 100%;
@@ -154,13 +193,6 @@ fieldset#modelo-content div:nth-child(2){
     margin-top: 10%;
     font-size: 14px;
     position: relative;
-}
-#btn-w-remover span {
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    font-size: 12px;
-    color: green;
 }
 div.content-rm-codigo {
     position: absolute;
@@ -180,7 +212,7 @@ div.rm-codigo {
     width: 480px;
     height: 580px;
     padding: 10px;
-    background-color: white;
+    background-color: silver;
     border: 1px solid #888;
 }
 div.rm-codigo h2 {

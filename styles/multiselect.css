@@ -14,10 +14,10 @@
 	position: absolute;
     background-color: mediumaquamarine;
     width: 50px;
-    height: 33px;
-    right: 48px;
-    top: 4px;
-    text-align: center;
+	height: 31px;
+    right: 49px;
+	top: 5px;
+	text-align: center;
     line-height: 32px;
     font-size: 24px;
 	color: white;
@@ -32,7 +32,7 @@
 	white-space: nowrap;
 	height: 500px;
 	overflow-y: scroll;
-	background-color: white;
+	background-color: silver;
 	border: 1px solid #888;
 	z-index: 5;
 }
