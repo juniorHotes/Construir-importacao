@@ -55,6 +55,8 @@ function listcreat(value) {
 var inLine = []
 btnGerar.addEventListener('click', () => {
 
+    textareaIn.value = textareaIn.value.trim()
+
     if (_filias.length === 0)
         return alert("Selecione ao menos uma loja")
     else if (_tipoPromocao == "")
