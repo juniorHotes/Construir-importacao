@@ -134,14 +134,12 @@ function saveFile(obj) {
 
     let str = JSON.stringify(obj)
 
-    fs.writeFile('resources/app/json/filias.json', str, function (err) {
-        if (err) {
-            fs.writeFile('json/filias.json', str, function (err) {
-                if (err) throw err
-                console.log('Loja salva!')
-            })
-        } else {
-            console.log('Loja salva!')
-        }
-    });
+    fs.writeFile('json/filias.json', str, function (err) {
+        if (err) throw err
+        console.log('Loja salva!')
+    })
+    // fs.writeFile('resources/app/json/filias.json', str, function (err) {
+    //     if (err) throw err
+    //     console.log('Loja salva!')
+    // })
 }
