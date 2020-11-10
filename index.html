@@ -16,65 +16,62 @@
         <h2 style="margin: 4px 10px">Gerar planilha para importação (Rotinas 402 e 1118)</h2>
     </header>
     <main>
-        <div class="content">
-            <fieldset class="config-filias">
-                <legend>Selecione as filias</legend>
+        <div class="config-filias">
 
-                <fieldset id="regional">
-                    <legend>Regional</legend>
-                    <input type="checkbox" name="r-sao-luis" id="r-sao-luis" checked>
-                    <label for="r-sao-luis">São Luís</label>
+            <fieldset id="regional">
+                <legend>Regional</legend>
+                <input type="checkbox" name="r-sao-luis" id="r-sao-luis">
+                <label for="r-sao-luis">São Luís</label>
 
-                    <input type="checkbox" name="r-maranhao" id="r-maranhao">
-                    <label for="r-maranhao">Maranhão</label>
+                <input type="checkbox" name="r-maranhao" id="r-maranhao">
+                <label for="r-maranhao">Maranhão</label>
 
-                    <input type="checkbox" name="r-para" id="r-para">
-                    <label for="r-para">Pará</label>
-                </fieldset>
+                <input type="checkbox" name="r-para" id="r-para">
+                <label for="r-para">Pará</label>
+            </fieldset>
 
-                <fieldset id="bandeira">
-                    <legend>Bandeira</legend>
-                    <input type="checkbox" name="b-mateus" id="b-mateus" checked>
-                    <label for="b-mateus">Mateus</label>
+            <fieldset id="bandeira">
+                <legend>Bandeira</legend>
+                <input type="checkbox" name="b-mateus" id="b-mateus">
+                <label for="b-mateus">Mateus</label>
 
-                    <input type="checkbox" name="b-camino" id="b-camino">
-                    <label for="b-camino">Camino</label>
+                <input type="checkbox" name="b-camino" id="b-camino">
+                <label for="b-camino">Camino</label>
 
-                    <input type="checkbox" name="b-pontomax" id="b-pontomax">
-                    <label for="b-pontomax">Ponto max</label>
+                <input type="checkbox" name="b-pontomax" id="b-pontomax">
+                <label for="b-pontomax">Ponto max</label>
 
-                    <input type="checkbox" name="b-eletro" id="b-eletro">
-                    <label for="b-eletro">Eletro</label>
-                </fieldset>
+                <input type="checkbox" name="b-eletro" id="b-eletro">
+                <label for="b-eletro">Eletro</label>
+            </fieldset>
 
-                <fieldset id="tipo">
-                    <legend>Tipo</legend>
-                    <input type="checkbox" name="t-mix" id="t-mix" checked>
-                    <label for="t-mix">Mix</label>
+            <fieldset id="tipo">
+                <legend>Tipo</legend>
+                <input type="checkbox" name="t-mix" id="t-mix">
+                <label for="t-mix">Mix</label>
 
-                    <input type="checkbox" name="t-varejo" id="t-varejo">
-                    <label for="t-varejo">Varejo</label>
-                </fieldset>
+                <input type="checkbox" name="t-varejo" id="t-varejo">
+                <label for="t-varejo">Varejo</label>
+            </fieldset>
 
-                <div id="selects-content">
-                    <label for="filias">Filias</label>
-                    <input type="text" name="filias" id="slc-filias" placeholder="">
-                    <div class="filias-content hidden">
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="select-all" id="select-all" value="0">
-                                <label for="select-all">SELECIONAR</label>
-                            </li>
-                            <hr>
-                        </ul>
-                    </div>
-
-                    <div id="total-filial">0</div>
-
-                    <button class="btn-color-green" id="btn-add-filial">+</button>
+            <div id="selects-content">
+                <label for="filias">Filias</label>
+                <input type="text" name="filias" id="slc-filias" placeholder="">
+                <div class="filias-content hidden">
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="select-all" id="select-all" value="0">
+                            <label for="select-all">SELECIONAR</label>
+                        </li>
+                        <hr>
+                    </ul>
                 </div>
 
-            </fieldset>
+                <div id="total-filial">0</div>
+
+                <button class="btn-color-green" id="btn-add-filial">+</button>
+            </div>
+
         </div>
 
         <div id="area-content">
@@ -83,7 +80,8 @@
                 <textarea id="textarea-in"></textarea>
                 <div class="field-buttons">
                     <button class="btn-color-blue" id="btn-limpar">Limpar</button>
-                    <!-- <button class="btn-color-blue" id="btn-split">Slit</button> -->
+                    <button class="btn-color-green" id="btn-w-remover">Remover códigos</button>
+                    <button class="btn-color-blue" id="btn-split">Slit</button>
                 </div>
             </fieldset>
 
@@ -132,7 +130,6 @@
                 </fieldset>
 
                 <button class="btn-color-blue" id="btn-gerar">Gerar <span>Ctrl+G</span></button>
-                <button class="btn-color-green" id="btn-w-remover">Remover códigos</button>
             </div>
 
             <fieldset id="text-area-out">
@@ -201,8 +198,10 @@
                 <label for="rm-txt-area">Adicione os códigos aqui</label>
                 <textarea name="rm-txt-area" id="rm-txt-area"></textarea>
                 <div class="ctt-buttons-rm">
-                    <button class="btn-color-blue" id="btn-desfazer" title="Adicionar novamente os itens que foram removidos">Desfazer</button>
-                    <button class="btn-color-green" id="btn-remover" title="Remover os itens listados no campo de texto acima">Remover</button>
+                    <button class="btn-color-blue" id="btn-desfazer"
+                        title="Adicionar novamente os itens que foram removidos">Desfazer</button>
+                    <button class="btn-color-green" id="btn-remover"
+                        title="Remover os itens listados no campo de texto acima">Remover</button>
                 </div>
             </div>
         </div>
