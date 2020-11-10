@@ -263,6 +263,7 @@ sFilial.addEventListener('paste', (event) => {
                 _filiasSelected.push(input.defaultValue)
 
                 totalFilial.innerHTML = _filiasSelected.length
+                sFilial.value = _filiasSelected.sort(sortList)
 
                 return _filias = _filiasSelected
             }
