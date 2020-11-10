@@ -213,6 +213,37 @@ div.header-rm {
     justify-content: space-between;
     align-items: center;
 }
+/* Alert */
+div.alert-content {    
+    position: absolute;
+    top: 0;
+    width: 99%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.alert-content.hidden {
+    display: none;
+}
+div.alert-content h4 {
+    display: block;
+    margin-bottom: 10px;
+}
+div.alert-btns {
+    justify-self: right;
+    align-self: end;
+}
+div.alert {
+    width: 400px;
+    min-height: 150px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 30px 1fr 35px;
+    background-color: silver;
+    border: 1px solid #888;
+}
+
 @media (max-width: 1165px) {
     .config-filias {
         display: grid;
