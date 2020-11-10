@@ -20,6 +20,7 @@ const rm_txt_area = document.querySelector('#rm-txt-area')
 
 let originalList = []
 btn_remover.addEventListener('click', () => {
+
     rm_txt_area.value = rm_txt_area.value.trim()
     textareaIn.value = textareaIn.value.trim()
 
@@ -42,7 +43,12 @@ btn_remover.addEventListener('click', () => {
 
     btn_desfazer.style.visibility = 'visible'
 
+    btnGerar.click()
+
     alert("Itens removidos!")
+    
+    rm_closed.click()
+
 })
 btn_desfazer.addEventListener('click', () => {
 
@@ -53,7 +59,11 @@ btn_desfazer.addEventListener('click', () => {
 
     btn_desfazer.style.visibility = 'hidden'
 
+    btnGerar.click()
+
     alert("Desfeito!\nO arquivo original foi restaurado.")
+
+    rm_closed.click()
 })
 textareaIn.addEventListener('paste', () => {
     setTimeout(() => {
@@ -62,8 +72,11 @@ textareaIn.addEventListener('paste', () => {
 })
 rm_txt_area.addEventListener('paste', () => {
     btn_remover.style.visibility = 'visible'
-})
-document.addEventListener('keyup', () => {
+
+    if(rm_txt_area.value != "")
+        rm_txt_area.value += "\n"
+})  
+document.addEventListener('keyup', (event) => {
     if (rm_txt_area.value == "") {
         btn_remover.style.visibility = 'hidden'
         btn_desfazer.style.visibility = 'hidden'
