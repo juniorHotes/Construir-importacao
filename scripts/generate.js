@@ -58,15 +58,15 @@ btnGerar.addEventListener('click', () => {
     textareaIn.value = textareaIn.value.trim()
 
     if (_filias.length === 0)
-        return alert("Selecione ao menos uma loja")
+        return Alert("Selecione ao menos uma loja")
     else if (_tipoPromocao == "")
-        return alert("Defina o tipo de promoção")
+        return Alert("Defina o tipo de promoção")
     else if (isModel === false && _motivoMidia == "")
-        return alert("Defina o motivo de mídia")
+        return Alert("Defina o motivo de mídia")
     else if (_dataIni == "")
-        return alert("Defina a data inicial da promoção")
+        return Alert("Defina a data inicial da promoção")
     else if (_dataFim == "")
-        return alert("Defina a data final da promoção")
+        return Alert("Defina a data final da promoção")
 
     textareaOut.innerHTML = ""
 
@@ -77,7 +77,7 @@ btnGerar.addEventListener('click', () => {
         exed *= 2
 
     if (exed > 10000)
-        return alert("O número de linhas exede o total de 10000")
+        return Alert("O número de linhas exede o total de 10000")
 
     if (inLine[inLine.length - 1] == "") {
         inLine.splice(inLine.length - 1, 1)

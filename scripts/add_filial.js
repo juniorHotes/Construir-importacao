@@ -75,7 +75,7 @@ function enabledDisabled(rmAttr, setAttr) {
 btn_salvar.addEventListener("click", () => {
 
     if (nome_loja.value == "" || add_regional.value == "" || add_bandeira.value == "" || add_tipo.value == "") {
-        return alert("Todos os campos são obrigatórios. \nInsira as informações que correspondem para a filial que deseja cadastrar")
+        return Alert("Todos os campos são obrigatórios. \nInsira as informações que correspondem para a filial que deseja cadastrar")
     } else {
         const loja = {
             id: filial,
@@ -91,7 +91,7 @@ btn_salvar.addEventListener("click", () => {
 
         saveFile(allFilias)
 
-        alert("Loja " + loja.id + " cadastrada")
+        Alert("Loja " + loja.id + " cadastrada")
 
         setTimeout(() => {
             window.location = "index.html"
@@ -115,7 +115,7 @@ btn_excluir.addEventListener("click", () => {
 
         saveFile(allFilias)
 
-        alert("Filial " + filial + " foi excuída")
+        Alert("Filial " + filial + " foi excuída")
         setTimeout(() => {
             window.location = "index.html"
         }, 500);
@@ -138,8 +138,8 @@ function saveFile(obj) {
         if (err) throw err
         console.log('Loja salva!')
     })
-    // fs.writeFile('resources/app/json/filias.json', str, function (err) {
-    //     if (err) throw err
-    //     console.log('Loja salva!')
-    // })
+    fs.writeFile('resources/app/json/filias.json', str, function (err) {
+        if (err) throw err
+        console.log('Loja salva!')
+    })
 }

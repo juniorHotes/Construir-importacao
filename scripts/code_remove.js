@@ -45,7 +45,7 @@ btn_remover.addEventListener('click', () => {
 
     btnGerar.click()
 
-    alert("Itens removidos!")
+    Alert("Itens removidos!")
     
     rm_closed.click()
 
@@ -61,7 +61,7 @@ btn_desfazer.addEventListener('click', () => {
 
     btnGerar.click()
 
-    alert("Desfeito!\nO arquivo original foi restaurado.")
+    Alert("Desfeito!\nO arquivo original foi restaurado.")
 
     rm_closed.click()
 })
