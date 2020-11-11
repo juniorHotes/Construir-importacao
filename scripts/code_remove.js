@@ -4,7 +4,7 @@ const content_rm_codigo = document.querySelector('.content-rm-codigo')
 
 btn_w_remover.addEventListener('click', function () {
     content_rm_codigo.classList.remove('hidden')
-    rm_txt_area.focus()
+    rm_txt_area_in.focus()
 })
 rm_closed.addEventListener('click', function () {
     content_rm_codigo.classList.add('hidden')
@@ -15,28 +15,35 @@ const btn_desfazer = document.querySelector('#btn-desfazer')
 btn_remover.style.visibility = 'hidden'
 btn_desfazer.style.visibility = 'hidden'
 
-
-const rm_txt_area = document.querySelector('#rm-txt-area')
+const rm_txt_area_in = document.querySelector('#rm-txt-area-in')
+const rm_txt_area_out = document.querySelector('#rm-txt-area-out')
+rm_txt_area_out.setAttribute('disabled', 'disabled')
 
 let originalList = []
 btn_remover.addEventListener('click', () => {
 
-    rm_txt_area.value = rm_txt_area.value.trim()
+    rm_txt_area_in.value = rm_txt_area_in.value.trim()
     textareaIn.value = textareaIn.value.trim()
 
     const textIn = textareaIn.value.split('\n')
     const codeIn = textIn.map((item, idx) => item = textIn[idx].split(/[\t\s]+/)[0].trim())
 
-    const lines = rm_txt_area.value.split('\n')
-    const code = lines.map((item, idx) => item = lines[idx].split('-')[0].trim())
+    const lines = rm_txt_area_in.value.split('\n')
+    const code = lines.map((item, idx) => item = lines[idx].split(/[-/\t\s]+/)[0].trim())
+
+    rm_txt_area_out.value = ""
 
     code.map(item => {
         let rm = codeIn.indexOf(item)
 
         if (rm == -1) return
 
+        console.log(textIn[rm])
+        rm_txt_area_out.value += textIn[rm] + "\n"
+
         codeIn.splice(rm, 1)
         textIn.splice(rm, 1)
+
     })
     textareaIn.value = ""
     textIn.map(item => textareaIn.value += item + "\n")
@@ -45,10 +52,14 @@ btn_remover.addEventListener('click', () => {
 
     btnGerar.click()
 
-    Alert("Itens removidos!")
-    
+    Alert("Itens removidos!\nGerando arquivo novamente...", false)
+
     rm_closed.click()
 
+    rm_txt_area_out.removeAttribute('disabled', 'disabled')
+    rm_txt_area_out.setAttribute('enabled', 'enabled')
+
+    btn_remover.style.visibility = 'hidden'
 })
 btn_desfazer.addEventListener('click', () => {
 
@@ -58,10 +69,15 @@ btn_desfazer.addEventListener('click', () => {
     originalList.map(item => textareaIn.value += item + "\n")
 
     btn_desfazer.style.visibility = 'hidden'
+    btn_remover.style.visibility = 'visible'
+
+    rm_txt_area_out.value = ""
+    rm_txt_area_out.removeAttribute('enabled', 'enabled')
+    rm_txt_area_out.setAttribute('disabled', 'disabled')
 
     btnGerar.click()
 
-    Alert("Desfeito!\nO arquivo original foi restaurado.")
+    Alert("Restaurando arquivo original...", false)
 
     rm_closed.click()
 })
@@ -70,16 +86,20 @@ textareaIn.addEventListener('paste', () => {
         return originalList = textareaIn.value.split('\n')
     }, 200);
 })
-rm_txt_area.addEventListener('paste', () => {
+rm_txt_area_in.addEventListener('paste', () => {
     btn_remover.style.visibility = 'visible'
+    btn_desfazer.style.visibility = 'hidden'
 
-    if(rm_txt_area.value != "")
-        rm_txt_area.value += "\n"
-})  
-document.addEventListener('keyup', (event) => {
-    if (rm_txt_area.value == "") {
+    if (rm_txt_area_in.value != "")
+        rm_txt_area_in.value += "\n"
+})
+document.addEventListener('keyup', () => {
+    if (rm_txt_area_in.value == "") {
         btn_remover.style.visibility = 'hidden'
         btn_desfazer.style.visibility = 'hidden'
+        rm_txt_area_out.removeAttribute('enabled', 'enabled')
+        rm_txt_area_out.setAttribute('disabled', 'disabled')
+        rm_txt_area_out.value = ""
     } else {
         btn_remover.style.visibility = 'visible'
     }
