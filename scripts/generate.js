@@ -32,6 +32,10 @@ function creatList(list, cat, _numFilias) {
 
         let total = _categoria == 3 ? list.length * 2 : list.length
         totalLinhas.innerHTML = "Total de linhas: " + total
+
+        if (index == inLine.length -1) {
+            document.querySelector('#btn-alert-ok').click()
+        }
     }
 }
 function listcreat(value) {
@@ -78,21 +82,26 @@ btnGerar.addEventListener('click', () => {
 
     if (exed > 10000)
         return Alert("O número de linhas exede o total de 10000")
+    if (exed > 300)
+        Alert("Gerando arquivo aguarde...", false)
 
-    if (inLine[inLine.length - 1] == "") {
-        inLine.splice(inLine.length - 1, 1)
-    }
-
-    listVarejo = []
-    lisAtacado = []
-
-    if (_categoria == 1) {
-        listcreat(1)
-    } else if (_categoria == 2) {
-        listcreat(2)
-    } else {
-        listcreat(1)
-    }
+    setTimeout(() => {
+        if (inLine[inLine.length - 1] == "") {
+            inLine.splice(inLine.length - 1, 1)
+        }
+    
+        listVarejo = []
+        lisAtacado = []
+    
+        if (_categoria == 1) {
+            listcreat(1)
+        } else if (_categoria == 2) {
+            listcreat(2)
+        } else {
+            listcreat(1)
+        }
+    
+    }, 500)
 })
 
 const btnLimpar = document.querySelector('#btn-limpar')
