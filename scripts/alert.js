@@ -12,6 +12,9 @@ function Alert(msn, confirme) {
     else if (confirme) {
         btn_alert_ok.style.visibility = "visible"
         btn_alert_cancel.style.visibility = "visible"
+    } else {
+        btn_alert_ok.style.visibility = "hidden"
+        btn_alert_cancel.style.visibility = "hidden"
     }
 
 
@@ -19,10 +22,8 @@ function Alert(msn, confirme) {
 
     btn_alert_cancel.addEventListener('click', function () {
         alert_content.classList.add('hidden');
-        return false
     })
     btn_alert_ok.addEventListener('click', function () {
         alert_content.classList.add('hidden');
-        return true
     })
 }
