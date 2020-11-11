@@ -1,25 +1,18 @@
 const btn_w_remover = document.querySelector('#btn-w-remover')
 const rm_closed = document.querySelector('#rm-closed')
 const content_rm_codigo = document.querySelector('.content-rm-codigo')
-
-btn_w_remover.addEventListener('click', function () {
-    content_rm_codigo.classList.remove('hidden')
-    rm_txt_area_in.focus()
-})
-rm_closed.addEventListener('click', function () {
-    content_rm_codigo.classList.add('hidden')
-})
-
 const btn_remover = document.querySelector('#btn-remover')
 const btn_desfazer = document.querySelector('#btn-desfazer')
+const rm_txt_area_in = document.querySelector('#rm-txt-area-in')
+const rm_txt_area_out = document.querySelector('#rm-txt-area-out')
+
+let originalList = []
+
 btn_remover.style.visibility = 'hidden'
 btn_desfazer.style.visibility = 'hidden'
 
-const rm_txt_area_in = document.querySelector('#rm-txt-area-in')
-const rm_txt_area_out = document.querySelector('#rm-txt-area-out')
 rm_txt_area_out.setAttribute('disabled', 'disabled')
 
-let originalList = []
 btn_remover.addEventListener('click', () => {
 
     rm_txt_area_in.value = rm_txt_area_in.value.trim()
@@ -81,11 +74,6 @@ btn_desfazer.addEventListener('click', () => {
 
     rm_closed.click()
 })
-textareaIn.addEventListener('paste', () => {
-    setTimeout(() => {
-        return originalList = textareaIn.value.split('\n')
-    }, 200);
-})
 rm_txt_area_in.addEventListener('paste', () => {
     btn_remover.style.visibility = 'visible'
     btn_desfazer.style.visibility = 'hidden'
@@ -97,11 +85,20 @@ document.addEventListener('keyup', () => {
     if (rm_txt_area_in.value == "") {
         btn_remover.style.visibility = 'hidden'
         btn_desfazer.style.visibility = 'hidden'
+
         rm_txt_area_out.removeAttribute('enabled', 'enabled')
         rm_txt_area_out.setAttribute('disabled', 'disabled')
+        
         rm_txt_area_out.value = ""
     } else {
         btn_remover.style.visibility = 'visible'
     }
 })
 
+btn_w_remover.addEventListener('click', function () {
+    content_rm_codigo.classList.remove('hidden')
+    rm_txt_area_in.focus()
+})
+rm_closed.addEventListener('click', function () {
+    content_rm_codigo.classList.add('hidden')
+})
