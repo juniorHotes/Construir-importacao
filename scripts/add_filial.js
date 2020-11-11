@@ -91,11 +91,11 @@ btn_salvar.addEventListener("click", () => {
 
         saveFile(allFilias)
 
-        Alert("Loja " + loja.id + " cadastrada")
+        Alert("Loja " + loja.id + " cadastrada", false)
 
         setTimeout(() => {
             window.location = "index.html"
-        }, 500);
+        }, 1000);
     }
 })
 
@@ -105,26 +105,17 @@ btn_excluir.addEventListener("click", () => {
         return item.id == filial
     })
 
-    var r = confirm("Tem certeza que deseja excluir a filial " + filial + "?")
-    if (r == true) {
-        console.log("OK!")
+    num_filial.value = ""
 
-        num_filial.value = ""
+    allFilias.splice(idfilial, 1)
 
-        allFilias.splice(idfilial, 1)
+    saveFile(allFilias)
 
-        saveFile(allFilias)
+    Alert("Filial " + filial + " foi excuída", false)
 
-        Alert("Filial " + filial + " foi excuída")
-        setTimeout(() => {
-            window.location = "index.html"
-        }, 500);
-    }
-    else {
-        console.log("Cancelado!")
-
-        num_filial.focus()
-    }
+    setTimeout(() => {
+        window.location = "index.html"
+    }, 1000);
 })
 
 // Save file
