@@ -69,93 +69,78 @@ function writeFilias(param) {
             event.target.parentElement.children[1].removeAttribute('style')
         })
     })
-
-    const selectElement = document.querySelector('#select-all')
-    selectElement.addEventListener('change', event => selectFilias(event, select()))
-
 }
 
-function selectFilias(event, arr) {
+function selectFilias(arr) {
     _filias = []
     _filiasSelected = []
 
     totalFilial.innerHTML = _filiasSelected.length
     sFilial.value = _filiasSelected
 
-    if (event.target.checked) {
-        let filtered = arr
+    let filtered = arr
 
-        inputsFilias.forEach((input) => {
-            input.checked = false
+    inputsFilias.forEach((input) => {
+        input.checked = false
 
-            let idx = filtered.indexOf(input.defaultValue)
+        let idx = filtered.indexOf(input.defaultValue)
 
-            if (input.defaultValue == filtered[idx]) {
-                input.checked = true
+        if (input.defaultValue == filtered[idx]) {
+            input.checked = true
 
-                _filiasSelected.push(input.defaultValue)
+            _filiasSelected.push(input.defaultValue)
 
-                totalFilial.innerHTML = _filiasSelected.length
-                sFilial.value = _filiasSelected
-            }
-        })
-    } else {
-        inputsFilias.forEach(input => {
-            input.checked = false
-        })
-    }
-
+            totalFilial.innerHTML = _filiasSelected.length
+            sFilial.value = _filiasSelected
+        }
+    })
     return _filias = _filiasSelected
 }
 
 // Regionais
 const r_sao_luis = document.querySelector('#r-sao-luis')
-r_sao_luis.addEventListener('change', event => selectFilias(event, select()))
+r_sao_luis.addEventListener('click', () => selectFilias(select()))
 const r_maranhao = document.querySelector('#r-maranhao')
-r_maranhao.addEventListener('change', event => selectFilias(event, select()))
+r_maranhao.addEventListener('click', () => selectFilias(select()))
 const r_para = document.querySelector('#r-para')
-r_para.addEventListener('change', event => selectFilias(event, select()))
+r_para.addEventListener('click', () => selectFilias(select()))
 
 // Bandeira
 const b_mateus = document.querySelector('#b-mateus')
-b_mateus.addEventListener('change', event => selectFilias(event, select()))
+b_mateus.addEventListener('click', () => selectFilias(select()))
 const b_camino = document.querySelector('#b-camino')
-b_camino.addEventListener('change', event => selectFilias(event, select()))
+b_camino.addEventListener('click', () => selectFilias(select()))
 const b_pontomax = document.querySelector('#b-pontomax')
-b_pontomax.addEventListener('change', event => selectFilias(event, select()))
+b_pontomax.addEventListener('click', () => selectFilias(select()))
 const b_eletro = document.querySelector('#b-eletro')
-b_eletro.addEventListener('change', event => selectFilias(event, select()))
+b_eletro.addEventListener('click', () => selectFilias(select()))
 
 // Tipo de loja
 const t_mix = document.querySelector('#t-mix')
-t_mix.addEventListener('change', event => selectFilias(event, select()))
+t_mix.addEventListener('click', () => selectFilias(select()))
 const t_varejo = document.querySelector('#t-varejo')
-t_varejo.addEventListener('change', event => selectFilias(event, select()))
+t_varejo.addEventListener('click', () => selectFilias(select()))
 
 function select() {
-
     let fil = []
 
-    allFilias.filter((item) => {
-        _filter(item, fil)
-    })
+    allFilias.filter(item => _filter(item, fil))
     return fil
 }
 function _filter(item, fil) {
     if (r_sao_luis.checked) {
-        saoLuis(item, fil, "saoLuis")
+        onFilter(item, fil, "saoLuis")
     }
-
     if (r_maranhao.checked) {
-        saoLuis(item, fil, "maranhao")
+        onFilter(item, fil, "maranhao")
     }
     if (r_para.checked) {
-        saoLuis(item, fil, "para")
+        onFilter(item, fil, "para")
     }
-
 }
 
-function saoLuis(item, fil, region) {
+function onFilter(item, fil, region) {
+
     let regional = (item.regional == region)
 
     let mateus = (item.bandeira == "MATEUS SUPERMERCADOS"),
