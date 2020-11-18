@@ -2,9 +2,13 @@ const textareaIn = document.querySelector('#textarea-in')
 const textareaOut = document.querySelector('#textarea-out')
 const btnGerar = document.querySelector('#btn-gerar')
 const totalLinhas = document.querySelector('#total-linhas')
+const btnLimpar = document.querySelector('#btn-limpar')
+const btnCopiar = document.querySelector('#btn-copiar')
 
 let listVarejo = []
 let lisAtacado = []
+
+let inLine = []
 
 function creatList(list, cat, _numFilias) {
     for (let index = 0; index < inLine.length; index++) {
@@ -28,10 +32,15 @@ function creatList(list, cat, _numFilias) {
                 _dataFim
             )
         }
-        textareaOut.innerHTML += list[list.length - 1] + "\n"
+        textareaOut.value += list[list.length - 1] + "\n"
 
         let total = _categoria == 3 ? list.length * 2 : list.length
         totalLinhas.innerHTML = "Total de linhas: " + total
+
+        if (index == inLine.length - 1) {
+            document.querySelector('#btn-alert-ok').click()
+            rm_closed.click()
+        }
     }
 }
 function listcreat(value) {
@@ -52,18 +61,23 @@ function listcreat(value) {
     }
 }
 
-var inLine = []
 btnGerar.addEventListener('click', () => {
 
-    if (_dataFim == "") {
-        return alert("Defina a data final da promoção")
-    } else if (_dataIni == "") {
-        return alert("Defina a data inicial da promoção")
-    } else if (_filias.length == 0) {
-        return alert("Selecione ao menos uma loja")
-    }
+    textareaIn.value = textareaIn.value.trim()
+    textareaOut.value = ""
 
-    textareaOut.innerHTML = ""
+    if (_filias.length === 0)
+        return Alert("Selecione ao menos uma loja")
+    else if (_tipoPromocao == "")
+        return Alert("Defina o tipo de promoção")
+    else if (isModel === false && _motivoMidia == "")
+        return Alert("Defina o motivo de mídia")
+    else if (_dataIni == "")
+        return Alert("Defina a data inicial da promoção")
+    else if (_dataFim == "")
+        return Alert("Defina a data final da promoção")
+    else if (textareaIn.value == "")
+        return Alert("Não a dados na entrada!")
 
     inLine = textareaIn.value.split('\n')
 
@@ -72,37 +86,33 @@ btnGerar.addEventListener('click', () => {
         exed *= 2
 
     if (exed > 10000)
-        return alert("O número de linhas exede o total de 10000")
+        return Alert("O número de linhas exede o total de 10000")
+    if (exed > 300)
+        Alert("Gerando arquivo aguarde...", false)
 
-    if (inLine[inLine.length - 1] == "") {
-        inLine.splice(inLine.length - 1, 1)
-    }
+    setTimeout(() => {
+        if (inLine[inLine.length - 1] == "") {
+            inLine.splice(inLine.length - 1, 1)
+        }
 
-    listVarejo = []
-    lisAtacado = []
+        listVarejo = []
+        lisAtacado = []
 
-    if (_categoria == 1) {
-        listcreat(1)
-    } else if (_categoria == 2) {
-        listcreat(2)
-    } else {
-        listcreat(1)
-    }
+        if (_categoria == 1) {
+            listcreat(1)
+        } else if (_categoria == 2) {
+            listcreat(2)
+        } else {
+            listcreat(1)
+        }
+
+    }, 500)
 })
-
-const btnLimpar = document.querySelector('#btn-limpar')
-const btnSplit = document.querySelector('#btn-split')
-const btnCopiar = document.querySelector('#btn-copiar')
-
 btnLimpar.addEventListener('click', () => {
     textareaIn.value = ""
+    textareaOut.value = ""
     textareaIn.focus()
 })
-btnCopiar.addEventListener('click', () => {
-    textareaOut.select()
-    document.execCommand("copy");
-})
-
 document.addEventListener('keypress', (event) => {
     if (event.ctrlKey === false && event.code != 'KeyG') return
 
@@ -112,39 +122,41 @@ document.addEventListener('keypress', (event) => {
         btnGerar.click()
     }
 })
-
 textareaIn.addEventListener('paste', () => {
     setTimeout(() => {
-        textareaIn.value = textareaIn.value.trim()
+        splitCode()
     }, 200);
 })
+btnCopiar.addEventListener('click', () => {
+    textareaOut.select()
+    document.execCommand("copy");
+})
 
-// btnSplit.addEventListener('click', () => {
-//     const ar1 = textareaIn.value.split('\n')
+function splitCode() {
+    const lines = textareaIn.value.split('\n')
 
-//     let code = []
-//     let price = []
+    textareaIn.value = ""
 
-//     ar1.forEach(element => {
-//         var posCode = element.indexOf('\t');
-//         var slcCode = element.slice(0, posCode).trim()
+    lines.map(item => {
+        const posCode = item.indexOf('\t');
+        const linecode = item.slice(0, posCode).trim()
 
-//         var multSplice = slcCode.split(/[ -.:;?!~,`"&|()<>{}\[\]\t\s\r\n/\\]+/)
+        const posPrice = item.lastIndexOf("\t");
+        const price = item.slice(posPrice, item.lenght).trim()
 
-//         console.log(multSplice)
+        const multSplice = linecode.split(/[ -.:;?!~,`"&|()<>{}\[\]\t\s\r\n/\\]+/)
 
-//         var posPrice = element.lastIndexOf("\t");
-//         var slcPreco = element.slice(posPrice, element.lenght).trim()
+        if (multSplice.length > 1) {
+            return multSplice.map(item => {
+                let num = parseInt(item)
+                if (!Number.isNaN(num))
+                    return textareaIn.value += num + "\t" + price + "\n"
+            })
+        } else {
+            return textareaIn.value += multSplice + "\t" + price + "\n"
+        }
+    })
+    textareaIn.value = textareaIn.value.trim()
 
-//         var isBar = slcCode.split(/[ -.:;?!~,`"&|()<>{}\[\]\t\s\r\n/\\]+/)
-
-//         // console.log(parseInt(slcCode) + "-" + slcPreco)
-//         // console.log(slcCode)
-
-//     });
-
-//     // console.log(code)
-//     // console.log(price)
-
-// })
-const progress_bar = document.querySelector('.progress-bar')
+    return originalList = textareaIn.value.split('\n')
+}

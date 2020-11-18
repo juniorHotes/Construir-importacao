@@ -2,52 +2,71 @@
     margin: 0;
     box-sizing: border-box;
 }
-.content {
-    width: 98%;
+body {
+    background-color: darkgray;
+}
+main {
+    width: 99%;
     margin: 0 auto;
 }
+label, legend, li, h2, h3, h4{
+    user-select: none;
+}
+textarea, input {
+    background-color: #fafafa;
+}
+.config-filias {
+    display: flex;
+    align-items: inherit;
+    justify-content: space-evenly;
+}
 .config-filias fieldset {
-    float: left;
-    margin-right: 5px;
+    margin-right: 4px;
+    width: auto;
+    min-width: fit-content;
+}
+button {
+    border: 1px solid #333;
+    color: white;
+    font-weight: 520;
+    padding: 5px 10px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: threedface;
+    border-image: initial;
+}
+button:hover {
+    filter: brightness(0.8);
+    border-style: inset;
+}
+button.btn-color-red {
+    background-color: #ff3300;
+}
+button.btn-color-blue {
+    background-color: #004ad3;
+}
+button.btn-color-green {
+    background-color: #00a149;
 }
 #t-promocao {
     width: 200px;
     padding: 4px;
 }
-#selects-content {
-    float: left;
-    margin-top: 8px;
-    padding: 3px;
-    border: 2px solid #888;
-    display: flex;
-    align-items: center;
-}
-#text-area-in {
-   width: 320px; 
-   margin: 14px;
-}
-#text-area-out {
-    width: 60%;
-    margin: 14px;
-}
-#text-area-in {
-    float: left;
-}
-#text-area-out {
-    float: right;
+#content-center {
+    max-width: 200px;
 }
 #text-area-in textarea {
     width: 100%;
-    height: 60vh;
-    max-height: 600px;
+    min-width: 250px;
+    height: 92%;
     white-space: nowrap;
     overflow:  auto;
     resize: none;
 }
 #text-area-out textarea {
     width: 100%;
-    height: 60vh;
-    max-height: 600px;
+    min-width: 200px;
+    height: 92%;
     white-space: nowrap;
     overflow:  auto;
     resize: none;
@@ -59,12 +78,11 @@
     align-items: center;
 }
 #area-content {
-    display: flex;
-}
-
-#content-center {
-    width: 200px;
-    margin-top: 25px;
+    height: 84vh;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 200fr;
+    grid-gap: 10px;
 }
 fieldset#categoria {
     margin-bottom: 10px;
@@ -81,16 +99,14 @@ fieldset#categoria {
     top: 2px;
     left: 2px;
     font-size: 12px;
-    color: green;
+    color: white;
 }
 /* Content incluir ou excluir filial */
 div.content-add {
     position: absolute;
     top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
+    width: 99%;
+    height: 99%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +118,7 @@ div.ctent-add-filial {
     width: 380px;
     height: 380px;
     padding: 10px;
-    background-color: white;
+    background-color: silver;
     border: 1px solid #888;
 }
 div.ctent-add-filial hr {
@@ -119,10 +135,10 @@ div.ctent-add-filial label:nth-child(1) {
 }
 button#btn-salvar {
     float: right;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 button#btn-excluir {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 div#ctt-head {
     display: flex;
@@ -134,7 +150,7 @@ fieldset#modelo-content {
 }
 fieldset#modelo-content div:nth-child(2){
     float: left;
-    margin-right: 75px;
+    margin-right: 40%;
 }
 #content-center #motivo-midia, #t-promocao {
     width: 100%;
@@ -146,4 +162,118 @@ fieldset#modelo-content div:nth-child(2){
 }
 #ctt-motivo-midia hidden {
     display: none;
+}
+input[name=c-atacado] {
+    margin-left: 13%;
+}
+input[name="data-ini"], input[name="data-fim"] {
+    width: 100%;
+}
+/* Remover código */
+div.content-rm-codigo {
+    position: absolute;
+    top: 0;
+    width: 99%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.content-rm-codigo.hidden {
+    display: none;
+}
+div.rm-codigo {
+    width: 630px;
+    height: 650px;
+    padding: 10px;
+    background-color: silver;
+    border: 1px solid #888;
+}
+div.rm-codigo h2 {
+    margin-bottom: 10px;
+}
+div.textareas-rm label {
+    display: block;
+
+}
+div.textareas-rm div:nth-child(1) {
+    width: 68%;
+    float: left;
+}
+div.textareas-rm div:nth-child(2) {
+    width: 30%;
+    float: right;
+}
+textarea#rm-txt-area-in, textarea#rm-txt-area-out {
+    width: 100%;
+    height: 530px;
+    white-space: nowrap;
+    overflow:  auto;
+    resize: none;
+}
+div.ctt-buttons-rm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+button#btn-remover, button#btn-desfazer {
+    width: 170px;
+    padding: 8px;
+    font-size: 14px; 
+    margin-top: 5px;
+}
+div.header-rm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Alert */
+div.alert-content {    
+    position: absolute;
+    top: 0;
+    width: 99%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.alert-content.hidden {
+    display: none;
+}
+div.alert-content h4 {
+    display: block;
+    margin-bottom: 10px;
+}
+div.alert-btns {
+    justify-self: right;
+    align-self: end;
+}
+div.alert {
+    width: 400px;
+    min-height: 150px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 30px 1fr 35px;
+    background-color: silver;
+    border: 1px solid #888;
+}
+
+@media (max-width: 1165px) {
+    .config-filias {
+        display: grid;
+        justify-content: stretch;
+    }
+    
+    .config-filias fieldset{
+        float: left;
+        grid-row: 1;
+    }
+    #selects-content {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+    #area-content {
+        height: 77vh;
+    }
 }

@@ -43,7 +43,7 @@ num_filial.addEventListener('keyup', (event) => {
                 event.target.value = value
 
                 event.target.select()
-                
+
                 return filial = value
             }
         }, 1000);
@@ -75,7 +75,7 @@ function enabledDisabled(rmAttr, setAttr) {
 btn_salvar.addEventListener("click", () => {
 
     if (nome_loja.value == "" || add_regional.value == "" || add_bandeira.value == "" || add_tipo.value == "") {
-        return alert("Todos os campos são obrigatórios. \nInsira as informações que correspondem para a filial que deseja cadastrar")
+        return Alert("Todos os campos são obrigatórios. \nInsira as informações que correspondem para a filial que deseja cadastrar")
     } else {
         const loja = {
             id: filial,
@@ -91,11 +91,11 @@ btn_salvar.addEventListener("click", () => {
 
         saveFile(allFilias)
 
-        alert("Loja "+ loja.id +" cadastrada")
+        Alert("Loja " + loja.id + " cadastrada", false)
 
         setTimeout(() => {
             window.location = "index.html"
-        }, 500);
+        }, 1000);
     }
 })
 
@@ -105,26 +105,17 @@ btn_excluir.addEventListener("click", () => {
         return item.id == filial
     })
 
-    var r = confirm("Tem certeza que deseja excluir a filial "+ filial +"?")
-    if (r == true) {
-        console.log("OK!")
+    num_filial.value = ""
 
-        num_filial.value = ""
+    allFilias.splice(idfilial, 1)
 
-        allFilias.splice(idfilial, 1)
+    saveFile(allFilias)
 
-        saveFile(allFilias)
+    Alert("Filial " + filial + " foi excuída", false)
 
-        alert("Filial "+ filial +" foi excuída")
-        setTimeout(() => {
-            window.location = "index.html"
-        }, 500);
-    }
-    else {
-        console.log("Cancelado!")
-
-        num_filial.focus()
-    }
+    setTimeout(() => {
+        window.location = "index.html"
+    }, 1000);
 })
 
 // Save file
@@ -134,8 +125,12 @@ function saveFile(obj) {
 
     let str = JSON.stringify(obj)
 
+    fs.writeFile('json/filias.json', str, function (err) {
+        if (err) throw err
+        console.log('Loja salva!')
+    })
     fs.writeFile('resources/app/json/filias.json', str, function (err) {
-        if (err) throw err;
-        console.log('Saved!');
-    });
+        if (err) throw err
+        console.log('Loja salva!')
+    })
 }

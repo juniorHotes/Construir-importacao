@@ -1,6 +1,6 @@
 {
   "name": "construir-importacao",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Construir arquivo de importacao",
   "main": "main.js",
   "scripts": {
@@ -25,7 +25,8 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.54",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
     "@electron-forge/maker-zip": "^6.0.0-beta.54",
-    "electron": "^10.1.3"
+    "electron": "^10.1.3",
+    "electron-icon-maker": "0.0.5"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
