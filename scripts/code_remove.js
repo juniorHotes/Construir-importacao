@@ -15,6 +15,20 @@ rm_txt_area_out.setAttribute('disabled', 'disabled')
 
 btn_remover.addEventListener('click', () => {
 
+    if (_filias.length === 0)
+        return Alert("Selecione ao menos uma loja")
+    else if (_tipoPromocao == "")
+        return Alert("Defina o tipo de promoção")
+    else if (isModel === false && _motivoMidia == "")
+        return Alert("Defina o motivo de mídia")
+    else if (_dataIni == "")
+        return Alert("Defina a data inicial da promoção")
+    else if (_dataFim == "")
+        return Alert("Defina a data final da promoção")
+    else if (textareaIn.value == "")
+        return Alert("Não a dados na entrada!")
+
+
     rm_txt_area_in.value = rm_txt_area_in.value.trim()
     textareaIn.value = textareaIn.value.trim()
 
@@ -24,37 +38,48 @@ btn_remover.addEventListener('click', () => {
     const lines = rm_txt_area_in.value.split('\n')
     const code = lines.map((item, idx) => item = lines[idx].split(/[-/\t\s]+/)[0].trim())
 
-    rm_txt_area_out.value = ""
+    codeIn.map(_ => {
+        code.map(item2 => {
+            let rm = codeIn.indexOf(item2)
 
-    code.map(item => {
-        let rm = codeIn.indexOf(item)
+            if (rm == -1) return
 
-        if (rm == -1) return
+            rm_txt_area_out.value += textIn[rm] + "\n"
 
-        console.log(textIn[rm])
-        rm_txt_area_out.value += textIn[rm] + "\n"
-
-        codeIn.splice(rm, 1)
-        textIn.splice(rm, 1)
-
+            codeIn.splice(rm, 1)
+            textIn.splice(rm, 1)
+        })
     })
+
     textareaIn.value = ""
     textIn.map(item => textareaIn.value += item + "\n")
 
     btn_desfazer.style.visibility = 'visible'
-
-    btnGerar.click()
-
-    Alert("Itens removidos!\nGerando arquivo novamente...", false)
-
-    rm_closed.click()
+    btn_remover.style.visibility = 'hidden'
 
     rm_txt_area_out.removeAttribute('disabled', 'disabled')
     rm_txt_area_out.setAttribute('enabled', 'enabled')
 
-    btn_remover.style.visibility = 'hidden'
+    btnGerar.click()
+
+    Alert("Removendo itens e gerando arquivo...", false)
+
 })
 btn_desfazer.addEventListener('click', () => {
+
+    if (_filias.length === 0)
+        return Alert("Selecione ao menos uma loja")
+    else if (_tipoPromocao == "")
+        return Alert("Defina o tipo de promoção")
+    else if (isModel === false && _motivoMidia == "")
+        return Alert("Defina o motivo de mídia")
+    else if (_dataIni == "")
+        return Alert("Defina a data inicial da promoção")
+    else if (_dataFim == "")
+        return Alert("Defina a data final da promoção")
+    else if (textareaIn.value == "")
+        return Alert("Não a dados na entrada!")
+
 
     if (originalList.length == 0) return
 
@@ -71,8 +96,6 @@ btn_desfazer.addEventListener('click', () => {
     btnGerar.click()
 
     Alert("Restaurando arquivo original...", false)
-
-    rm_closed.click()
 })
 rm_txt_area_in.addEventListener('paste', () => {
     btn_remover.style.visibility = 'visible'
@@ -88,7 +111,7 @@ document.addEventListener('keyup', () => {
 
         rm_txt_area_out.removeAttribute('enabled', 'enabled')
         rm_txt_area_out.setAttribute('disabled', 'disabled')
-        
+
         rm_txt_area_out.value = ""
     } else {
         btn_remover.style.visibility = 'visible'

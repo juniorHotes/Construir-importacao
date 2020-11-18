@@ -32,13 +32,14 @@ function creatList(list, cat, _numFilias) {
                 _dataFim
             )
         }
-        textareaOut.innerHTML += list[list.length - 1] + "\n"
+        textareaOut.value += list[list.length - 1] + "\n"
 
         let total = _categoria == 3 ? list.length * 2 : list.length
         totalLinhas.innerHTML = "Total de linhas: " + total
 
         if (index == inLine.length - 1) {
             document.querySelector('#btn-alert-ok').click()
+            rm_closed.click()
         }
     }
 }
@@ -63,6 +64,7 @@ function listcreat(value) {
 btnGerar.addEventListener('click', () => {
 
     textareaIn.value = textareaIn.value.trim()
+    textareaOut.value = ""
 
     if (_filias.length === 0)
         return Alert("Selecione ao menos uma loja")
@@ -74,8 +76,8 @@ btnGerar.addEventListener('click', () => {
         return Alert("Defina a data inicial da promoção")
     else if (_dataFim == "")
         return Alert("Defina a data final da promoção")
-
-    textareaOut.innerHTML = ""
+    else if (textareaIn.value == "")
+        return Alert("Não a dados na entrada!")
 
     inLine = textareaIn.value.split('\n')
 
@@ -108,6 +110,7 @@ btnGerar.addEventListener('click', () => {
 })
 btnLimpar.addEventListener('click', () => {
     textareaIn.value = ""
+    textareaOut.value = ""
     textareaIn.focus()
 })
 document.addEventListener('keypress', (event) => {
