@@ -8,15 +8,29 @@
     <link href="styles/multiselect.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="styles/style.css">
-    <title>Inportador</title>
+    <title>Importador - Gerar planilha para importação (Rotinas 402 e 1118)</title>
 </head>
 
 <body>
     <header>
-        <h3 style="margin: 4px 10px">Gerar planilha para importação (Rotinas 402 e 1118)</h3>
+        <h3 style="margin: 4px 10px"></h3>
     </header>
     <main>
         <div class="config-filias">
+
+            <div id="selects-content">
+                <label for="filias">Filias</label>
+                <input type="text" name="filias" id="slc-filias" placeholder="">
+                <div class="filias-content hidden">
+                    <ul>
+                        <hr>
+                    </ul>
+                </div>
+
+                <div id="total-filial">0</div>
+
+                <button class="btn-color-green" id="btn-add-filial">+</button>
+            </div>
 
             <fieldset id="regional">
                 <legend>Regional</legend>
@@ -25,6 +39,18 @@
 
                 <input type="checkbox" name="r-maranhao" id="r-maranhao">
                 <label for="r-maranhao">Maranhão</label>
+
+                <input type="checkbox" name="r-ceara" id="r-ceara">
+                <label for="r-ceara">Ceará</label>
+
+                <input type="checkbox" name="r-piaui" id="r-piaui">
+                <label for="r-piaui">Piauí</label>
+
+                <input type="checkbox" name="r-pernambuco" id="r-pernambuco">
+                <label for="r-pernambuco">Pernambuco</label>
+
+                <input type="checkbox" name="r-bahia" id="r-bahia">
+                <label for="r-bahia">Bahia</label>
 
                 <input type="checkbox" name="r-para" id="r-para">
                 <label for="r-para">Pará</label>
@@ -54,20 +80,6 @@
                 <label for="t-varejo">Varejo</label>
             </fieldset>
 
-            <div id="selects-content">
-                <label for="filias">Filias</label>
-                <input type="text" name="filias" id="slc-filias" placeholder="">
-                <div class="filias-content hidden">
-                    <ul>
-                        <hr>
-                    </ul>
-                </div>
-
-                <div id="total-filial">0</div>
-
-                <button class="btn-color-green" id="btn-add-filial">+</button>
-            </div>
-
         </div>
 
         <div id="area-content">
@@ -84,12 +96,13 @@
                 <fieldset id="modelo-content">
                     <legend>Modelo do arquivo</legend>
                     <div>
-                        <input type="radio" name="modelo" id="m402" checked>
-                        <label for="m402">402</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="modelo" id="m1118">
+                        <input type="radio" name="modelo" id="m1118" checked>
                         <label for="m1118">1118</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="modelo" id="m402">
+                        <label for="m402">402</label>
                     </div>
                 </fieldset>
 
@@ -159,6 +172,10 @@
                         <option value=""></option>
                         <option value="saoLuis">São Luís</option>
                         <option value="maranhao">Maranhão</option>
+                        <option value="ceara">Ceará</option>
+                        <option value="piaui">Piauí</option>
+                        <option value="pernambuco">Pernambuco</option>
+                        <option value="bahia">Bahia</option>
                         <option value="para">Pará</option>
                     </select>
 

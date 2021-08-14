@@ -1,1 +1,1150 @@
-[{"id":"1","bandeira":"MATEUS SUPERMERCADOS","nome":"BALSAS","regional":"maranhao","tipo":"varejo"},{"id":"2","bandeira":"MATEUS SUPERMERCADOS","nome":"CEARA","regional":"maranhao","tipo":"varejo"},{"id":"3","bandeira":"MATEUS SUPERMERCADOS","nome":"SANTA INES","regional":"maranhao","tipo":"varejo"},{"id":"4","bandeira":"MATEUS SUPERMERCADOS","nome":"GOIAS","regional":"maranhao","tipo":"varejo"},{"id":"5","bandeira":"MATEUS SUPERMERCADOS","nome":"COHAB","regional":"saoLuis","tipo":"varejo"},{"id":"7","bandeira":"MATEUS SUPERMERCADOS","nome":"COHAMA","regional":"saoLuis","tipo":"varejo"},{"id":"8","bandeira":"MATEUS SUPERMERCADOS","nome":"TURU","regional":"saoLuis","tipo":"varejo"},{"id":"9","bandeira":"ELETRO MATEUS","nome":"A MARANHENSE","regional":"saoLuis","tipo":"varejo"},{"id":"11","bandeira":"MATEUS SUPERMERCADOS","nome":"CID. OPERARIA","regional":"saoLuis","tipo":"varejo"},{"id":"12","bandeira":"MATEUS SUPERMERCADOS","nome":"RIO ANIL","regional":"saoLuis","tipo":"varejo"},{"id":"13","bandeira":"ELETRO MATEUS","nome":"BACURI","regional":"maranhao","tipo":"null"},{"id":"15","bandeira":"MATEUS SUPERMERCADOS","nome":"ACAILANDIA","regional":"maranhao","tipo":"varejo"},{"id":"16","bandeira":"MATEUS SUPERMERCADOS","nome":"CALHAU","regional":"saoLuis","tipo":"varejo"},{"id":"17","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX TIRICAL","regional":"saoLuis","tipo":"atacarejo"},{"id":"18","bandeira":"MATEUS SUPERMERCADOS","nome":"COHATRAC","regional":"saoLuis","tipo":"varejo"},{"id":"19","bandeira":"MATEUS SUPERMERCADOS","nome":"S. DA ILHA","regional":"saoLuis","tipo":"varejo"},{"id":"20","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX CURVA DO 90","regional":"saoLuis","tipo":"atacarejo"},{"id":"23","bandeira":"MATEUS SUPERMERCADOS","nome":"CAJAZEIRAS","regional":"saoLuis","tipo":"varejo"},{"id":"24","bandeira":"MATEUS SUPERMERCADOS","nome":"SUPER MARABA","regional":"para","tipo":"varejo"},{"id":"25","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX NOVA MARABA","regional":"para","tipo":"atacarejo"},{"id":"26","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX MARABA","regional":"para","tipo":"atacarejo"},{"id":"27","bandeira":"MATEUS SUPERMERCADOS","nome":"TURU","regional":"saoLuis","tipo":"varejo"},{"id":"28","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX PARAUAPEBAS","regional":"para","tipo":"atacarejo"},{"id":"29","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX JARDIM TROPICAL","regional":"saoLuis","tipo":"atacarejo"},{"id":"30","bandeira":"MATEUS SUPERMERCADOS","nome":"BACANGA","regional":"saoLuis","tipo":"varejo"},{"id":"31","bandeira":"MATEUS SUPERMERCADOS","nome":"PATIO NORTE","regional":"saoLuis","tipo":"varejo"},{"id":"32","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX TIMON","regional":"maranhao","tipo":"atacarejo"},{"id":"34","bandeira":"MATEUS SUPERMERCADOS","nome":"JARDIM RENASCENCA","regional":"saoLuis","tipo":"varejo"},{"id":"35","bandeira":"MATEUS SUPERMERCADOS","nome":"CASTANHAL","regional":"para","tipo":"varejo"},{"id":"36","bandeira":"MATEUS SUPERMERCADOS","nome":"JADERLANDIA","regional":"para","tipo":"varejo"},{"id":"37","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX BELEM","regional":"para","tipo":"atacarejo"},{"id":"38","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX ALTAMIRA","regional":"para","tipo":"atacarejo"},{"id":"39","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX CHAPADINHA","regional":"maranhao","tipo":"atacarejo"},{"id":"41","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX CAXIAS","regional":"maranhao","tipo":"atacarejo"},{"id":"44","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX BABACULANDIA","regional":"maranhao","tipo":"atacarejo"},{"id":"45","bandeira":"MATEUS SUPERMERCADOS","nome":"MARAMBAIA","regional":"para","tipo":"varejo"},{"id":"46","bandeira":"MATEUS SUPERMERCADOS","nome":"MAGUARI","regional":"para","tipo":"varejo"},{"id":"47","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX BACABAL","regional":"maranhao","tipo":"atacarejo"},{"id":"48","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX PEDREIRAS","regional":"maranhao","tipo":"atacarejo"},{"id":"49","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX CASTANHAL","regional":"para","tipo":"atacarejo"},{"id":"50","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX ABAETETUBA","regional":"para","tipo":"atacarejo"},{"id":"51","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX MARITUBA","regional":"para","tipo":"atacarejo"},{"id":"52","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX ACAILANDIA","regional":"maranhao","tipo":"atacarejo"},{"id":"55","bandeira":"ELETRO MATEUS","nome":"PRESIDENTE DUTRA","regional":"maranhao","tipo":"null"},{"id":"56","bandeira":"ELETRO MATEUS","nome":"RUA DA PAZ","regional":"saoLuis","tipo":"null"},{"id":"57","bandeira":"ELETRO MATEUS","nome":"COHAB","regional":"saoLuis","tipo":"null"},{"id":"59","bandeira":"ELETRO MATEUS","nome":"ACAILANDIA","regional":"maranhao","tipo":"null"},{"id":"62","bandeira":"ELETRO MATEUS","nome":"COHATRAC","regional":"saoLuis","tipo":"null"},{"id":"63","bandeira":"ELETRO MATEUS","nome":"JOAO PAULO","regional":"saoLuis","tipo":"null"},{"id":"64","bandeira":"ELETRO MATEUS","nome":"TIRIRICAL","regional":"saoLuis","tipo":"null"},{"id":"65","bandeira":"ELETRO MATEUS","nome":"SANTA INES","regional":"maranhao","tipo":"null"},{"id":"66","bandeira":"ELETRO MATEUS","nome":"SAO FRANCISCO","regional":"saoLuis","tipo":"null"},{"id":"67","bandeira":"ELETRO MATEUS","nome":"GRAJAU","regional":"maranhao","tipo":"null"},{"id":"68","bandeira":"ELETRO MATEUS","nome":"SANTA LUZIA","regional":"maranhao","tipo":"null"},{"id":"69","bandeira":"ELETRO MATEUS","nome":"PEDREIRAS","regional":"maranhao","tipo":"null"},{"id":"71","bandeira":"ELETRO MATEUS","nome":"IMPERATRIZ","regional":"maranhao","tipo":"null"},{"id":"72","bandeira":"ELETRO MATEUS","nome":"VINHAIS","regional":"saoLuis","tipo":"null"},{"id":"73","bandeira":"ELETRO MATEUS","nome":"PRACA DE FATIMA","regional":"maranhao","tipo":"null"},{"id":"74","bandeira":"ELETRO MATEUS","nome":"MERCADINHO","regional":"maranhao","tipo":"null"},{"id":"75","bandeira":"ELETRO MATEUS","nome":"ANGELIM","regional":"saoLuis","tipo":"null"},{"id":"76","bandeira":"ELETRO MATEUS","nome":"BERNARDO SAYAO","regional":"maranhao","tipo":"null"},{"id":"77","bandeira":"ELETRO MATEUS","nome":"MERCADO CENTRAL","regional":"saoLuis","tipo":"null"},{"id":"79","bandeira":"ELETRO MATEUS","nome":"LAGO DA PEDRA","regional":"maranhao","tipo":"null"},{"id":"91","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX STA INES","regional":"maranhao","tipo":"atacarejo"},{"id":"92","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX BACURI","regional":"maranhao","tipo":"atacarejo"},{"id":"93","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX MAIOBAO","regional":"saoLuis","tipo":"atacarejo"},{"id":"94","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX BALSAS","regional":"maranhao","tipo":"atacarejo"},{"id":"95","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX ITZ","regional":"maranhao","tipo":"atacarejo"},{"id":"96","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX JOAO PAULO","regional":"saoLuis","tipo":"atacarejo"},{"id":"97","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX TERESINA","regional":"maranhao","tipo":"atacarejo"},{"id":"99","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX PINHEIRO","regional":"maranhao","tipo":"atacarejo"},{"id":"124","bandeira":"ELETRO MATEUS","nome":"CIDADE NOVA","regional":"para","tipo":"null"},{"id":"125","bandeira":"ELETRO MATEUS","nome":"RIO VERDE","regional":"para","tipo":"null"},{"id":"126","bandeira":"ELETRO MATEUS","nome":"BAIRRO DA PAZ","regional":"para","tipo":"null"},{"id":"127","bandeira":"ELETRO MATEUS","nome":"ELDORADO DOS CARAJAS","regional":"para","tipo":"null"},{"id":"128","bandeira":"ELETRO MATEUS","nome":"CURIONOPOLIS","regional":"para","tipo":"null"},{"id":"129","bandeira":"ELETRO MATEUS","nome":"CANAA DOS CARAJAS","regional":"para","tipo":"null"},{"id":"131","bandeira":"ELETRO MATEUS","nome":"BACABAL","regional":"maranhao","tipo":"null"},{"id":"132","bandeira":"ELETRO MATEUS","nome":"VILHENA","regional":"para","tipo":"null"},{"id":"133","bandeira":"ELETRO MATEUS","nome":"SAO FELIX PIONEIRO","regional":"para","tipo":"null"},{"id":"134","bandeira":"ELETRO MATEUS","nome":"CASTELO BRANCO","regional":"para","tipo":"null"},{"id":"137","bandeira":"ELETRO MATEUS","nome":"BREU BRANCO","regional":"para","tipo":"null"},{"id":"138","bandeira":"ELETRO MATEUS","nome":"JACUNDA","regional":"para","tipo":"null"},{"id":"140","bandeira":"ELETRO MATEUS","nome":"TUCURUI","regional":"para","tipo":"null"},{"id":"142","bandeira":"ELETRO MATEUS","nome":"TUCUMA","regional":"para","tipo":"null"},{"id":"143","bandeira":"ELETRO MATEUS","nome":"TRANCREDO NEVES","regional":"para","tipo":"null"},{"id":"144","bandeira":"ELETRO MATEUS","nome":"MAIOBAO","regional":"maranhao","tipo":"null"},{"id":"145","bandeira":"ELETRO MATEUS","nome":"TAILANDIA","regional":"para","tipo":"null"},{"id":"146","bandeira":"ELETRO MATEUS","nome":"ESTREITO","regional":"maranhao","tipo":"null"},{"id":"149","bandeira":"ELETRO MATEUS","nome":"SJR","regional":"maranhao","tipo":"null"},{"id":"150","bandeira":"ELETRO MATEUS","nome":"7 DE SETEMBRO","regional":"para","tipo":"null"},{"id":"151","bandeira":"ELETRO MATEUS","nome":"ANAPU","regional":"para","tipo":"null"},{"id":"152","bandeira":"ELETRO MATEUS","nome":"URUARA","regional":"para","tipo":"null"},{"id":"153","bandeira":"ELETRO MATEUS","nome":"MEDICILANDIA","regional":"para","tipo":"null"},{"id":"154","bandeira":"ELETRO MATEUS","nome":"PACAJA","regional":"para","tipo":"null"},{"id":"156","bandeira":"ELETRO MATEUS","nome":"ELETRO CID OPERARIA","regional":"saoLuis","tipo":"null"},{"id":"157","bandeira":"ELETRO MATEUS","nome":"TIJUPA","regional":"maranhao","tipo":"null"},{"id":"158","bandeira":"ELETRO MATEUS","nome":"VELHA MARABA","regional":"para","tipo":"null"},{"id":"160","bandeira":"ELETRO MATEUS","nome":"GUAJAJARAS","regional":"saoLuis","tipo":"null"},{"id":"161","bandeira":"ELETRO MATEUS","nome":"XINGUARA","regional":"para","tipo":"null"},{"id":"163","bandeira":"ELETRO MATEUS","nome":"COROATA CAJUEIRO","regional":"maranhao","tipo":"null"},{"id":"164","bandeira":"ELETRO MATEUS","nome":"TIMON","regional":"maranhao","tipo":"null"},{"id":"165","bandeira":"ELETRO MATEUS","nome":"VIANA","regional":"maranhao","tipo":"null"},{"id":"166","bandeira":"ELETRO MATEUS","nome":"PARAUAPEBAS","regional":"para","tipo":"null"},{"id":"168","bandeira":"ELETRO MATEUS","nome":"REDENCAO","regional":"para","tipo":"null"},{"id":"170","bandeira":"ELETRO MATEUS","nome":"SAO MATEUS","regional":"maranhao","tipo":"null"},{"id":"200","bandeira":"MATEUS SUPERMERCADOS","nome":"SUPER ANIL","regional":"saoLuis","tipo":"varejo"},{"id":"201","bandeira":"MATEUS SUPERMERCADOS","nome":"SUPER COHATRAC","regional":"saoLuis","tipo":"varejo"},{"id":"202","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX SUPER CODO","regional":"maranhao","tipo":"atacarejo"},{"id":"251","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX PARNAIBA","regional":"maranhao","tipo":"atacarejo"},{"id":"252","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX TERESINA","regional":"maranhao","tipo":"atacarejo"},{"id":"253","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX PEDREIRA BELEM","regional":"para","tipo":"atacarejo"},{"id":"254","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX PARQUE DOS CARAJAS","regional":"para","tipo":"atacarejo"},{"id":"255","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX ARACAGY","regional":"saoLuis","tipo":"atacarejo"},{"id":"259","bandeira":"MATEUS SUPERMERCADOS","nome":"MIX GUAJAJARAS FORQUILHA","regional":"saoLuis","tipo":"atacarejo"},{"id":"307","bandeira":"CONVENIERE SUPERMERCADOS","nome":"CATULO LETRA A","regional":"maranhao","tipo":"varejo"},{"id":"308","bandeira":"CONVENIERE SUPERMERCADOS","nome":"LADO B","regional":"maranhao","tipo":"null"},{"id":"309","bandeira":"CONVENIERE SUPERMERCADOS","nome":"FLORA RICA","regional":"maranhao","tipo":"varejo"},{"id":"310","bandeira":"CONVENIERE SUPERMERCADOS","nome":"POTOSI","regional":"maranhao","tipo":"varejo"},{"id":"408","bandeira":"MERCADINHO CARONE","nome":"A DA GUARDA LJ 005","regional":"saoLuis","tipo":"varejo"},{"id":"409","bandeira":"MERCADINHO CARONE","nome":"MAIOBAO LJ 006","regional":"saoLuis","tipo":"varejo"},{"id":"410","bandeira":"MERCADINHO CARONE","nome":"S CRISTOVAO LJ 004","regional":"saoLuis","tipo":"varejo"},{"id":"411","bandeira":"MERCADINHO CARONE","nome":"MARANH NOVO LJ 002","regional":"saoLuis","tipo":"varejo"},{"id":"412","bandeira":"MERCADINHO CARONE","nome":"ITAPIRACO LJ 001","regional":"saoLuis","tipo":"varejo"},{"id":"414","bandeira":"POSTERUS SUPERMERCADOS","nome":"ESTREITO","regional":"maranhao","tipo":"varejo"},{"id":"415","bandeira":"POSTERUS SUPERMERCADOS","nome":"SAO BERNARDO","regional":"saoLuis","tipo":"varejo"},{"id":"416","bandeira":"POSTERUS SUPERMERCADOS","nome":"JACUNDA","regional":"para","tipo":"varejo"},{"id":"418","bandeira":"POSTERUS SUPERMERCADOS","nome":"DIVINEIA","regional":"saoLuis","tipo":"varejo"},{"id":"423","bandeira":"POSTERUS SUPERMERCADOS","nome":"TUCUMA","regional":"para","tipo":"varejo"},{"id":"424","bandeira":"POSTERUS SUPERMERCADOS","nome":"ROSARIO","regional":"maranhao","tipo":"varejo"},{"id":"425","bandeira":"POSTERUS SUPERMERCADOS","nome":"S J RIBAMAR","regional":"saoLuis","tipo":"varejo"},{"id":"426","bandeira":"POSTERUS SUPERMERCADOS","nome":"SAO FELIX ll","regional":"para","tipo":"varejo"},{"id":"427","bandeira":"POSTERUS SUPERMERCADOS","nome":"ARARI","regional":"maranhao","tipo":"varejo"},{"id":"428","bandeira":"POSTERUS SUPERMERCADOS","nome":"RUANNA","regional":"maranhao","tipo":"varejo"},{"id":"429","bandeira":"POSTERUS SUPERMERCADOS","nome":"SANTA RITA","regional":"maranhao","tipo":"varejo"},{"id":"430","bandeira":"POSTERUS SUPERMERCADOS","nome":"RONDON","regional":"para","tipo":"varejo"},{"id":"431","bandeira":"POSTERUS SUPERMERCADOS","nome":"LAGO DA PEDRA LTDA","regional":"maranhao","tipo":"varejo"},{"id":"432","bandeira":"POSTERUS SUPERMERCADOS","nome":"CAROLINA","regional":"maranhao","tipo":"varejo"},{"id":"433","bandeira":"POSTERUS SUPERMERCADOS","nome":"VIANA","regional":"maranhao","tipo":"varejo"},{"id":"435","bandeira":"POSTERUS SUPERMERCADOS","nome":"COROATA","regional":"maranhao","tipo":"varejo"},{"id":"436","bandeira":"POSTERUS SUPERMERCADOS","nome":"CAMINO CARCARA","regional":"maranhao","tipo":"varejo"},{"id":"437","bandeira":"POSTERUS SUPERMERCADOS","nome":"CONCEICAO DO ARAGUAIA","regional":"para","tipo":"varejo"},{"id":"438","bandeira":"POSTERUS SUPERMERCADOS","nome":"GRAJAU","regional":"maranhao","tipo":"varejo"},{"id":"439","bandeira":"POSTERUS SUPERMERCADOS","nome":"CASA DO ARROZ","regional":"maranhao","tipo":"varejo"},{"id":"445","bandeira":"POSTERUS SUPERMERCADOS","nome":"ITAPECURU","regional":"maranhao","tipo":"varejo"},{"id":"447","bandeira":"POSTERUS SUPERMERCADOS","nome":"TUTOIA","regional":"maranhao","tipo":"varejo"}]
+[
+    {
+        "id": "1",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "BALSAS",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "2",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "CEARA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "3",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SANTA INES",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "4",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "GOIAS",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "5",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "COHAB",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "7",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "COHAMA",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "8",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "TURU",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "9",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "A MARANHENSE",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "11",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "CID. OPERARIA",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "12",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "RIO ANIL",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "13",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "BACURI",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "15",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "ACAILANDIA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "16",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "CALHAU",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "17",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX TIRICAL",
+        "regional": "saoLuis",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "18",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "COHATRAC",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "19",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "S. DA ILHA",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "20",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX VINHAIS",
+        "regional": "saoLuis",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "23",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "CAJAZEIRAS",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "24",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER MARABA",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "25",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX NOVA MARABA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "26",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX MARABA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "27",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "TURU",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "28",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX PARAUAPEBAS",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "29",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX JARDIM TROPICAL",
+        "regional": "saoLuis",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "30",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "BACANGA",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "31",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "PATIO NORTE",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "32",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX TIMON",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "34",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "JARDIM RENASCENCA",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "35",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "CASTANHAL",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "36",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "JADERLANDIA",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "37",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX BELEM",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "38",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX ALTAMIRA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "39",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX CHAPADINHA",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "40",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "BARRA DO CORDA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "41",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX CAXIAS",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "42",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "PRESIDENTE-DUTRA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "44",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX BABACULANDIA",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "45",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MARAMBAIA",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "46",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MAGUARI",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "47",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX BACABAL",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "48",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX PEDREIRAS",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "49",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX CASTANHAL",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "50",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX ABAETETUBA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "51",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX MARITUBA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "52",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX ACAILANDIA",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "55",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "PRESIDENTE DUTRA",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "56",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "RUA DA PAZ",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "57",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "COHAB",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "59",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "ACAILANDIA",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "62",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "COHATRAC",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "63",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "JOAO PAULO",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "64",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "TIRIRICAL",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "65",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "SANTA INES",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "66",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "SAO FRANCISCO",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "67",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "GRAJAU",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "68",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "SANTA LUZIA",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "69",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "PEDREIRAS",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "71",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "IMPERATRIZ",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "72",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "VINHAIS",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "73",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "PRACA DE FATIMA",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "74",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "MERCADINHO",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "75",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "ANGELIM",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "76",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "BERNARDO SAYAO",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "77",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "MERCADO CENTRAL",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "79",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "LAGO DA PEDRA",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "91",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX STA INES",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "92",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX BACURI",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "93",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX MAIOBAO",
+        "regional": "saoLuis",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "94",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX BALSAS",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "95",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX ITZ",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "96",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX JOAO PAULO",
+        "regional": "saoLuis",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "97",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX TERESINA",
+        "regional": "piaui",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "99",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX PINHEIRO",
+        "regional": "maranhao",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "124",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "CIDADE NOVA",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "125",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "RIO VERDE",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "126",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "BAIRRO DA PAZ",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "127",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "ELDORADO DOS CARAJAS",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "128",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "CURIONOPOLIS",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "129",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "CANAA DOS CARAJAS",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "131",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "BACABAL",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "132",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "VILHENA",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "133",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "SAO FELIX PIONEIRO",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "134",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "CASTELO BRANCO",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "137",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "BREU BRANCO",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "138",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "JACUNDA",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "140",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "TUCURUI",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "142",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "TUCUMA",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "143",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "TRANCREDO NEVES",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "144",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "MAIOBAO",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "145",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "TAILANDIA",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "146",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "ESTREITO",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "149",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "SJR",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "150",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "7 DE SETEMBRO",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "151",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "ANAPU",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "152",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "URUARA",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "153",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "MEDICILANDIA",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "154",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "PACAJA",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "156",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "ELETRO CID OPERARIA",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "157",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "TIJUPA",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "158",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "VELHA MARABA",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "160",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "GUAJAJARAS",
+        "regional": "saoLuis",
+        "tipo": "null"
+    },
+    {
+        "id": "161",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "XINGUARA",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "163",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "COROATA CAJUEIRO",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "164",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "TIMON",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "165",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "VIANA",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "166",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "PARAUAPEBAS",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "168",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "REDENCAO",
+        "regional": "para",
+        "tipo": "null"
+    },
+    {
+        "id": "170",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "SAO MATEUS",
+        "regional": "maranhao",
+        "tipo": "null"
+    },
+    {
+        "id": "184",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "MATEUS SUPER",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "200",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER ANIL",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "201",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER COHATRAC",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "202",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER CODO",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "203",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER TAILANDIA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "204",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER BARCARENA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "207",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER BURITICUPU",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "251",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX PARNAIBA",
+        "regional": "piaui",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "252",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX TERESINA",
+        "regional": "piaui",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "253",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX PEDREIRA BELEM",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "254",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX PARQUE DOS CARAJAS",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "255",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX ARACAGY",
+        "regional": "saoLuis",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "256",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX BARCARENA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "259",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX GUAJAJARAS FORQUILHA",
+        "regional": "saoLuis",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "260",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "TUCURUÍ",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "261",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "REDENCAO",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "263",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MARIO COVAS",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "264",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "TIANGUA",
+        "regional": "ceara",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "266",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX SOBRAL",
+        "regional": "ceara",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "271",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "FLORIANO",
+        "regional": "piaui",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "300",
+        "bandeira": "CONVENIERE SUPERMERCADOS",
+        "nome": "ELETRO BRASIL",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "302",
+        "bandeira": "CONVENIERE SUPERMERCADOS",
+        "nome": "ELETRO BRASIL",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "305",
+        "bandeira": "CONVENIERE SUPERMERCADOS",
+        "nome": "ELETRO BRASIL",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "408",
+        "bandeira": "MERCADINHO CARONE",
+        "nome": "A DA GUARDA LJ 005",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "409",
+        "bandeira": "MERCADINHO CARONE",
+        "nome": "MAIOBAO LJ 006",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "410",
+        "bandeira": "MERCADINHO CARONE",
+        "nome": "S CRISTOVAO LJ 004",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "411",
+        "bandeira": "MERCADINHO CARONE",
+        "nome": "MARANH NOVO LJ 002",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "412",
+        "bandeira": "MERCADINHO CARONE",
+        "nome": "ITAPIRACO LJ 001",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "414",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "ESTREITO",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "415",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "SAO BERNARDO",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "416",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "JACUNDA",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "418",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "DIVINEIA",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "423",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "TUCUMA",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "424",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "ROSARIO",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "425",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "S J RIBAMAR",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
+        "id": "426",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "SAO FELIX ll",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "427",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "ARARI",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "428",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "RUANNA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "429",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "SANTA RITA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "430",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "RONDON",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "431",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "LAGO DA PEDRA LTDA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "432",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "CAROLINA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "433",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "VIANA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "434",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "BARREIRINHAS",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "435",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "COROATA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "436",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "CAMINO CARCARA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "437",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "CONCEICAO DO ARAGUAIA",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "438",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "GRAJAU",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "439",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "CASA DO ARROZ",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "445",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "ITAPECURU",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "446",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "SANTA LUZIA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "447",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "TUTOIA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "449",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "GOIANESIA",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "450",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "ZE DOCA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "451",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "VARGEM GRANDE",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "452",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "GADELHA VITORINO-FREIRE",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    }
+]

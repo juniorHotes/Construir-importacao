@@ -97,15 +97,24 @@ function selectFilias(arr) {
     return _filias = _filiasSelected
 }
 
-// Regionais
+//#region Regionais
 const r_sao_luis = document.querySelector('#r-sao-luis')
 r_sao_luis.addEventListener('click', () => selectFilias(select()))
 const r_maranhao = document.querySelector('#r-maranhao')
 r_maranhao.addEventListener('click', () => selectFilias(select()))
+const r_ceara = document.querySelector('#r-ceara')
+r_ceara.addEventListener('click', () => selectFilias(select()))
+const r_piaui = document.querySelector('#r-piaui')
+r_piaui.addEventListener('click', () => selectFilias(select()))
+const r_pernambuco = document.querySelector('#r-pernambuco')
+r_pernambuco.addEventListener('click', () => selectFilias(select()))
+const r_bahia = document.querySelector('#r-bahia')
+r_bahia.addEventListener('click', () => selectFilias(select()))
 const r_para = document.querySelector('#r-para')
 r_para.addEventListener('click', () => selectFilias(select()))
+//#endregion
 
-// Bandeira
+//#region Bandeira
 const b_mateus = document.querySelector('#b-mateus')
 b_mateus.addEventListener('click', () => selectFilias(select()))
 const b_camino = document.querySelector('#b-camino')
@@ -114,12 +123,14 @@ const b_pontomax = document.querySelector('#b-pontomax')
 b_pontomax.addEventListener('click', () => selectFilias(select()))
 const b_eletro = document.querySelector('#b-eletro')
 b_eletro.addEventListener('click', () => selectFilias(select()))
+//#endregion
 
-// Tipo de loja
+//#region  Tipo de loja
 const t_mix = document.querySelector('#t-mix')
 t_mix.addEventListener('click', () => selectFilias(select()))
 const t_varejo = document.querySelector('#t-varejo')
 t_varejo.addEventListener('click', () => selectFilias(select()))
+//#endregion
 
 function select() {
     let fil = []
@@ -133,6 +144,18 @@ function _filter(item, fil) {
     }
     if (r_maranhao.checked) {
         onFilter(item, fil, "maranhao")
+    }
+    if (r_ceara.checked) {
+        onFilter(item, fil, "ceara")
+    }
+    if (r_piaui.checked) {
+        onFilter(item, fil, "piaui")
+    }
+    if (r_pernambuco.checked) {
+        onFilter(item, fil, "pernambuco")
+    }
+    if (r_bahia.checked) {
+        onFilter(item, fil, "bahia")
     }
     if (r_para.checked) {
         onFilter(item, fil, "para")

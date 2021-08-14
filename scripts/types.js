@@ -22,6 +22,7 @@ let _motivoMidia = 0
 let _categoria = 0
 
 function onLoad() {
+    m1118.click()
     _tipoPromocao = tipoPromo.value
     if (catgVarejo.checked && catgAtacado.checked)
         _categoria = 3
