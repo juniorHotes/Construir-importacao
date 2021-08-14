@@ -114,7 +114,7 @@
     {
         "id": "20",
         "bandeira": "MATEUS SUPERMERCADOS",
-        "nome": "MIX CURVA DO 90",
+        "nome": "MIX VINHAIS",
         "regional": "saoLuis",
         "tipo": "atacarejo"
     },
@@ -231,11 +231,25 @@
         "tipo": "atacarejo"
     },
     {
+        "id": "40",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "BARRA DO CORDA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
         "id": "41",
         "bandeira": "MATEUS SUPERMERCADOS",
         "nome": "MIX CAXIAS",
         "regional": "maranhao",
         "tipo": "atacarejo"
+    },
+    {
+        "id": "42",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "PRESIDENTE-DUTRA",
+        "regional": "maranhao",
+        "tipo": "varejo"
     },
     {
         "id": "44",
@@ -486,7 +500,7 @@
         "id": "97",
         "bandeira": "MATEUS SUPERMERCADOS",
         "nome": "MIX TERESINA",
-        "regional": "maranhao",
+        "regional": "piaui",
         "tipo": "atacarejo"
     },
     {
@@ -742,6 +756,13 @@
         "tipo": "null"
     },
     {
+        "id": "184",
+        "bandeira": "ELETRO MATEUS",
+        "nome": "MATEUS SUPER",
+        "regional": "saoLuis",
+        "tipo": "varejo"
+    },
+    {
         "id": "200",
         "bandeira": "MATEUS SUPERMERCADOS",
         "nome": "SUPER ANIL",
@@ -758,22 +779,43 @@
     {
         "id": "202",
         "bandeira": "MATEUS SUPERMERCADOS",
-        "nome": "MIX SUPER CODO",
+        "nome": "SUPER CODO",
         "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "203",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER TAILANDIA",
+        "regional": "para",
         "tipo": "atacarejo"
+    },
+    {
+        "id": "204",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER BARCARENA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "207",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER BURITICUPU",
+        "regional": "maranhao",
+        "tipo": "varejo"
     },
     {
         "id": "251",
         "bandeira": "MATEUS SUPERMERCADOS",
         "nome": "MIX PARNAIBA",
-        "regional": "maranhao",
+        "regional": "piaui",
         "tipo": "atacarejo"
     },
     {
         "id": "252",
         "bandeira": "MATEUS SUPERMERCADOS",
         "nome": "MIX TERESINA",
-        "regional": "maranhao",
+        "regional": "piaui",
         "tipo": "atacarejo"
     },
     {
@@ -798,6 +840,13 @@
         "tipo": "atacarejo"
     },
     {
+        "id": "256",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX BARCARENA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
         "id": "259",
         "bandeira": "MATEUS SUPERMERCADOS",
         "nome": "MIX GUAJAJARAS FORQUILHA",
@@ -805,30 +854,65 @@
         "tipo": "atacarejo"
     },
     {
-        "id": "307",
+        "id": "260",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "TUCURUÍ",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "261",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "REDENCAO",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "263",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MARIO COVAS",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "264",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "TIANGUA",
+        "regional": "ceara",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "266",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX SOBRAL",
+        "regional": "ceara",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "271",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "FLORIANO",
+        "regional": "piaui",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "300",
         "bandeira": "CONVENIERE SUPERMERCADOS",
-        "nome": "CATULO LETRA A",
+        "nome": "ELETRO BRASIL",
         "regional": "maranhao",
         "tipo": "varejo"
     },
     {
-        "id": "308",
+        "id": "302",
         "bandeira": "CONVENIERE SUPERMERCADOS",
-        "nome": "LADO B",
-        "regional": "maranhao",
-        "tipo": "null"
-    },
-    {
-        "id": "309",
-        "bandeira": "CONVENIERE SUPERMERCADOS",
-        "nome": "FLORA RICA",
+        "nome": "ELETRO BRASIL",
         "regional": "maranhao",
         "tipo": "varejo"
     },
     {
-        "id": "310",
+        "id": "305",
         "bandeira": "CONVENIERE SUPERMERCADOS",
-        "nome": "POTOSI",
+        "nome": "ELETRO BRASIL",
         "regional": "maranhao",
         "tipo": "varejo"
     },
@@ -973,6 +1057,13 @@
         "tipo": "varejo"
     },
     {
+        "id": "434",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "BARREIRINHAS",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
         "id": "435",
         "bandeira": "POSTERUS SUPERMERCADOS",
         "nome": "COROATA",
@@ -1011,6 +1102,48 @@
         "id": "445",
         "bandeira": "POSTERUS SUPERMERCADOS",
         "nome": "ITAPECURU",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "446",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "SANTA LUZIA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "447",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "TUTOIA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "449",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "GOIANESIA",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "450",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "ZE DOCA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "451",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "VARGEM GRANDE",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "452",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "GADELHA VITORINO-FREIRE",
         "regional": "maranhao",
         "tipo": "varejo"
     }
