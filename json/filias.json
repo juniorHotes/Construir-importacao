@@ -805,6 +805,27 @@
         "tipo": "varejo"
     },
     {
+        "id": "208",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER CANAA DOS CARAJAS",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "211",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "PIRIPIRI",
+        "regional": "piaui",
+        "tipo": "varejo"
+    },
+    {
+        "id": "213",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "SUPER ESTREITO",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
         "id": "251",
         "bandeira": "MATEUS SUPERMERCADOS",
         "nome": "MIX PARNAIBA",
@@ -843,6 +864,13 @@
         "id": "256",
         "bandeira": "MATEUS SUPERMERCADOS",
         "nome": "MIX BARCARENA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "257",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX COQUEIRO",
         "regional": "para",
         "tipo": "atacarejo"
     },
@@ -889,10 +917,31 @@
         "tipo": "atacarejo"
     },
     {
+        "id": "267",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX BRAGANÇA",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "268",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX PARAGOMINAS",
+        "regional": "para",
+        "tipo": "atacarejo"
+    },
+    {
         "id": "271",
         "bandeira": "MATEUS SUPERMERCADOS",
         "nome": "FLORIANO",
         "regional": "piaui",
+        "tipo": "atacarejo"
+    },
+    {
+        "id": "275",
+        "bandeira": "MATEUS SUPERMERCADOS",
+        "nome": "MIX TIMON 02",
+        "regional": "maranhao",
         "tipo": "atacarejo"
     },
     {
@@ -1144,6 +1193,41 @@
         "id": "452",
         "bandeira": "POSTERUS SUPERMERCADOS",
         "nome": "GADELHA VITORINO-FREIRE",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "458",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "CAMINO ITINGA",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "459",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": " POSTERUS SUPERMERCADOS LTDA CURURUPU",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "461",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "CAMINO URBANO SANTOS",
+        "regional": "maranhao",
+        "tipo": "varejo"
+    },
+    {
+        "id": "466",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "CAMINO DOM ELIZEU 2",
+        "regional": "para",
+        "tipo": "varejo"
+    },
+    {
+        "id": "467",
+        "bandeira": "POSTERUS SUPERMERCADOS",
+        "nome": "CAMINO COLINAS",
         "regional": "maranhao",
         "tipo": "varejo"
     }
