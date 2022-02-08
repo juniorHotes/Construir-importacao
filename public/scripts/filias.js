@@ -8,11 +8,15 @@ function sortList(a, b) {
     return a - b
 }
 
-fetch('json/filias.json')
-    .then(res => res.json())
+fetch(window.location.origin + '/filiais', {
+    method: "GET",
+    headers: { "Content-type": "application/json;charset=UTF-8" },
+    mode: 'cors',
+}).then(res => res.json())
     .then(filias => {
-        allFilias = Object.values(filias)
+        allFilias = Object.values(filias.data)
         writeFilias(allFilias)
+        document.querySelector('.loadind-wrap').style.visibility = 'hidden'
     })
 
 const totalFilial = document.querySelector('#total-filial')
@@ -46,13 +50,13 @@ function onSelect(event) {
 function writeFilias(param) {
     const slcFilias = document.querySelector('.filias-content ul')
     for (filial of param) {
-        let id = filial.id
-        let str = id + "-" + filial.bandeira + "-" + filial.nome
+        let n_filial = filial.n_filial
+        let str = n_filial + "-" + filial.bandeira + "-" + filial.nome
 
         slcFilias.innerHTML +=
             `<li>
-                <input type="checkbox" name="select-f${id}" id="select-f${id}" value="${id}" class="slc">
-                <label  for="select-f${id}">${str}</label>
+                <input type="checkbox" name="select-f${n_filial}" id="select-f${n_filial}" value="${n_filial}" class="slc">
+                <label  for="select-f${n_filial}">${str}</label>
             </li>`
     }
 
@@ -83,7 +87,7 @@ function selectFilias(arr) {
     inputsFilias.forEach((input) => {
         input.checked = false
 
-        let idx = filtered.indexOf(input.defaultValue)
+        let idx = filtered.indexOf(Number(input.defaultValue))
 
         if (input.defaultValue == filtered[idx]) {
             input.checked = true
@@ -176,28 +180,28 @@ function onFilter(item, fil, region) {
 
     if (b_mateus.checked && t_mix.checked && t_varejo.checked) {
         if (regional && mateus)
-            fil.push(item.id)
+            fil.push(item.n_filial)
     }
     if (b_camino.checked && t_varejo.checked) {
         if (regional && (carone || posterus))
-            fil.push(item.id)
+            fil.push(item.n_filial)
     }
     if (b_pontomax.checked && t_varejo.checked) {
         if (regional && (pontoMax))
-            fil.push(item.id)
+            fil.push(item.n_filial)
     }
 
     if (b_eletro.checked) {
         if (regional && eletro)
-            fil.push(item.id)
+            fil.push(item.n_filial)
     }
     if (b_mateus.checked && t_mix.checked && !t_varejo.checked) {
         if (regional && mateus && atacarejo)
-            fil.push(item.id)
+            fil.push(item.n_filial)
     }
     if (b_mateus.checked && t_varejo.checked && !t_mix.checked) {
         if (regional && mateus && varejo)
-            fil.push(item.id)
+            fil.push(item.n_filial)
     }
 }
 

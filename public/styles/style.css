@@ -15,6 +15,31 @@ label, legend, li, h2, h3, h4{
 textarea, input {
     background-color: #fafafa;
 }
+.loadind-wrap {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    color: rgb(75, 72, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+}
+
+.loadind-wrap svg {
+    animation: loading 0.3s linear 0.1s infinite;
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .config-filias {
     display: flex;
     align-items: inherit;
@@ -148,9 +173,10 @@ div#ctt-head {
 fieldset#modelo-content {
     margin-bottom: 10px;
 }
-fieldset#modelo-content div:nth-child(2){
-    float: left;
-    margin-right: 40%;
+fieldset#modelo-content, fieldset#categoria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 #content-center #motivo-midia, #t-promocao {
     width: 100%;
