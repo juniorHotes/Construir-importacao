@@ -124,13 +124,21 @@ const fs = require("fs")
 function saveFile(obj) {
 
     let str = JSON.stringify(obj)
+    let targetDir = 'json/filias.json';
+    let targetBackupDir = 'json/filiasBackUp.json';
 
-    fs.writeFile('json/filias.json', str, function (err) {
+    if(fs.existsSync('resources/app/json/filias.json')) {
+        targetDir = 'resources/app/json/filias.json';
+        targetBackupDir = 'resources/app/json/filiasBackUp.json';
+    }
+
+    fs.writeFile(targetDir, str, function (err) {
         if (err) throw err
+
+        fs.writeFile(targetBackupDir, str, function (err) {
+            if (err) throw err
+            console.log('Backup Loja salva!')
+        })
         console.log('Loja salva!')
-    })
-    fs.writeFile('resources/app/json/filias.json', str, function (err) {
-        if (err) throw err
-        console.log('Loja salva!')
-    })
+    });   
 }
